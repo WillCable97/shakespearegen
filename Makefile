@@ -21,6 +21,12 @@ endif
 GruModel:
 	$(PYTHON_INTERPRETER) src/gru_runner.py
 
+LstmModel:
+	$(PYTHON_INTERPRETER) src/lstm_runner.py
+
+RnnModel:
+	$(PYTHON_INTERPRETER) src/rnn_runner.py
+
 
 
 
