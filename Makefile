@@ -27,8 +27,8 @@ LstmModel:
 RnnModel:
 	$(PYTHON_INTERPRETER) src/rnn_runner.py
 
-
-
+RunModel: 
+	$(PYTHON_INTERPRETER) src/general_runner.py $(model) $(epochs)
 
 #################################################################################
 # COMMANDS                                                                      #
