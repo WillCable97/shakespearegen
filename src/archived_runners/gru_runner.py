@@ -28,9 +28,14 @@ for sequence in sequence_lengths:
 
 
     model_base_path = f"./src/models/callbacks/gru/sequence_{sequence}"
-    checkpoint_prefix = os.path.join(model_base_path, "checkpoint", "ckpt_{epoch}")
-    csv_prefix = os.path.join(model_base_path, "csv", "csv_tracker")
 
+
+    checkpoint_path = os.path.join(model_base_path, "checkpoint")#, "ckpt_{epoch}")
+    csv_path = os.path.join(model_base_path, "csv")#, "csv_tracker")
+    checkpoint_prefix = os.path.join(checkpoint_path, "ckpt_{epoch}")
+    csv_prefix = os.path.join(csv_path, "csv_tracker")
+    os.makedirs(checkpoint_path)
+    os.makedirs(csv_path)
 
     checkpoint_callback=tf.keras.callbacks.ModelCheckpoint(
         filepath=checkpoint_prefix,
