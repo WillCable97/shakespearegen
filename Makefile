@@ -30,6 +30,15 @@ RnnModel:
 RunModel: 
 	$(PYTHON_INTERPRETER) src/general_runner.py $(model) $(epochs)
 
+
+Test: 
+	$(PYTHON_INTERPRETER) src/data/data_objs/TextDataSet.py
+
+
+Trans:
+	$(PYTHON_INTERPRETER) src/models/transformer/TransformerRunner.py
+
+
 #################################################################################
 # COMMANDS                                                                      #
 #################################################################################
