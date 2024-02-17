@@ -209,3 +209,56 @@ single_emb_trans.fit(data_set,
                 epochs=10)
 
 
+
+
+
+def generate_text(input_text: str, max_length: int, generated_length: int) -> str:
+    #Prepare the input vector
+    tokenised_input = tokenizer_used.texts_to_sequences([input_text])[0]
+    working_tokens = tokenised_input
+    tokens_generated = []
+
+    #Handle overflow strings
+    initial_len = len(working_tokens)
+    if len(working_tokens) > max_length: working_tokens = working_tokens[initial_len - max_length:]
+
+    #Handle padding
+    working_index = len(working_tokens)
+    if working_index <= max_length: working_tokens = working_tokens + ([0] * (max_length - working_index))
+    working_index-=1
+
+    #Run generation loop
+    for i in range(generated_length):
+        np_arr = np.array(working_tokens)
+        np_arr = np_arr[np.newaxis, :]
+
+        prediction = single_emb_trans(np_arr)
+        prediction_dimension = prediction[0][working_index]
+
+        logits, indices = tf.math.top_k(prediction_dimension, k=10, sorted=True)
+        indices = np.asarray(indices).astype("int32")
+        pred_probs = tf.keras.activations.softmax(tf.expand_dims(logits, 0))[0]
+        pred_probs = np.asarray(pred_probs).astype("float32")
+        chosen_token = np.random.choice(indices, p=pred_probs)
+
+        tokens_generated.append(chosen_token)
+
+        if working_index == max_length-1:
+            working_tokens.append(chosen_token)
+            working_tokens = working_tokens[1:]
+        else:
+            working_index += 1
+            working_tokens[working_index] = chosen_token
+
+    
+    token_map = tokenizer_used.index_word   
+    full_return = tokenised_input + tokens_generated
+    full_return = [token_map[t] for t in full_return]
+    return_str = ''
+    for s in full_return: return_str += f"{s} "
+    return return_str
+
+
+
+input_test_string = "Romeo: "
+print(generate_text(input_test_string, 80, 89))
