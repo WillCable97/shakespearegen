@@ -36,7 +36,7 @@ Test:
 
 
 Trans:
-	$(PYTHON_INTERPRETER) src/models/transformer/TransformerRunner.py
+	$(PYTHON_INTERPRETER) ./kaggle.py
 
 
 #################################################################################

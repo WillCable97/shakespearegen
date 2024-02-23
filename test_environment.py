@@ -1,6 +1,7 @@
 import sys
+from test_classes import test_classes
 
-REQUIRED_PYTHON = "python"
+REQUIRED_PYTHON = "python3"
 
 
 def main():
@@ -19,6 +20,9 @@ def main():
                 required_major, sys.version))
     else:
         print(">>> Development environment passes all tests!")
+
+    test_classes()
+
 
 
 if __name__ == '__main__':
