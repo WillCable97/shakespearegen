@@ -19,4 +19,5 @@ def get_webscrape_data(data_path: str):
 
         all_eng_text += play_eng_lines
         all_og_text += play_og_lines
-    return all_eng_text[:10000], all_og_text[:10000]
+    return all_eng_text, all_og_text#[:10000]
+

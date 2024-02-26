@@ -17,12 +17,14 @@ def csv_callback(base_path, input_model_name):
     return csv_callback
 
 
-def checkpoint_callback(base_path, input_model_name):
+def checkpoint_callback(base_path, input_model_name, period):
     full_path = path_to_model_saves(base_path, input_model_name)
     full_path = os.path.join(full_path, "checkpoint_tracker")
     if not os.path.exists(full_path): os.makedirs(full_path)
     checkpoint_prefix = os.path.join(full_path, "ckpt_{epoch}")
     checkpoint_callback = ModelCheckpoint(
         filepath=checkpoint_prefix,
-        save_weights_only=True)
+        save_weights_only=True
+        ,save_freq='epoch'
+        ,period=period)
     return checkpoint_callback
