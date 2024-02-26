@@ -1,5 +1,5 @@
 import tensorflow as tf
-from src.models.Transformer.Layers.SelfAttentionHead import SelfAttentionHead
+from src.models.Transformer.Layers.AttentionHeads.SelfAttentionHead import SelfAttentionHead
 from src.models.Transformer.Layers.DenseComponent import DenseComponent
 
 

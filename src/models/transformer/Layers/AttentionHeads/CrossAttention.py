@@ -1,5 +1,5 @@
 import tensorflow as tf
-from src.models.Transformer.Layers.BaseAttention import BaseAttention
+from src.models.Transformer.Layers.AttentionHeads.BaseAttention import BaseAttention
 
 
 class CrossAttention(BaseAttention):

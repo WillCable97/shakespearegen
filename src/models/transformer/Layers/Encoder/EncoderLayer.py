@@ -1,33 +1,26 @@
 import tensorflow as tf 
 from src.models.Transformer.Layers.PositionalEmbedding import PositionalEmbedding
-from src.models.Transformer.Layers.DecoderComponent import DecoderComponent
+from src.models.Transformer.Layers.Encoder.EncoderComponent import EncoderComponent
 
-
-class DecoderLayer(tf.keras.layers.Layer):
+class EncoderLayer(tf.keras.layers.Layer):
     """
         Layer of chained together decoder blocks with positional embedding to start with
         Was created for a singular embedding space
     """
     def __init__(self, vocab_size: int, embedding_dimension: int, sequence_length: int
                  ,num_heads: int, dense_dimension: int, num_att_layers: int, dropout_rate=0.1):
-        super(DecoderLayer, self).__init__()
-
-
-        self.embedding_dimension = embedding_dimension
-        self.num_att_layers = num_att_layers
-
+        super().__init__()
         self.positional_embedding = PositionalEmbedding(vocab_size=vocab_size, embedding_dimension=embedding_dimension
                                                         , sequence_length=sequence_length)
         self.dropout = tf.keras.layers.Dropout(dropout_rate)
-        self.dense_sequence = [DecoderComponent(num_heads=num_heads, embedding_dimension=embedding_dimension
+        self.dense_sequence = [EncoderComponent(num_heads=num_heads, embedding_dimension=embedding_dimension
                              ,dense_dimension=dense_dimension) for i in range(num_att_layers)]
         
-    def call(self, x, context):
-        x = self.positional_embedding(x)
+    def call(self, context):
+        x = self.positional_embedding(context)
         x = self.dropout(x)
         
-        for decoder in self.dense_sequence:
-            x = decoder(x, context)
+        for encoder in self.dense_sequence:
+            x = encoder(x)
 
         return x
-
