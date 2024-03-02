@@ -8,6 +8,8 @@ class Transformer(tf.keras.Model):
                  , context_length: int, content_length: int,num_heads: int
                  , dense_dimension: int, num_att_layers: int, dropout_rate=0.1):
         super().__init__()  
+        self.context_length = context_length
+        self.content_length = content_length
 
         self.encoder_layer = EncoderLayer(vocab_size=context_vocab_size+1,embedding_dimension=embedding_dimension
                                           ,sequence_length=context_length,num_heads=num_heads

@@ -26,6 +26,12 @@ class TextToToken(ABC):
 
     def get_vocab_size(self) -> int: 
         return self.vocab_size
+    
+    def bookmark_status(self) -> bool:
+        return self.bookmarked
+    
+    def get_bookmark_tokens(self) -> list:
+        return self.bookmark_tokens
 
     def detokenise_to_string(self, input: list) ->str:
         return ' '.join(self.detokenise(input))

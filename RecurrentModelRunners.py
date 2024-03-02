@@ -1,0 +1,63 @@
+import os 
+import tensorflow as tf
+
+from src.data.TextToToken.CustomCharacterToken import CustomCharacterToken
+from src.data.DataObjects.StandardTextDataObject import E2EStandardTextObject
+#from src.data.DataObjects.TextDataObject import TransformerTextDataObject
+from src.data.DataLoaders import get_data_from_hgset
+
+#from src.models.Transformer.Transformer import Transformer
+from src.models.RecurrentModels.LSTM_model import LSTM_model
+
+#from src.models.LossAndMetrics import masked_loss, masked_accuracy, CustomSchedule
+#from src.models.Callbacks.callbacks import csv_callback, checkpoint_callback, TransformerOutputCallback
+#from src.models.TextGenerators.StandardTransformerGenerator import StandardTransformerGenerator
+
+
+#Project details
+project_directory = os.path.abspath("./")
+path_to_data_folder = os.path.join(project_directory, "data/processed/webdata")
+content_token = CustomCharacterToken(use_bookmark=False)
+
+model_name = "LSTM Model"
+
+sequence_length = 100
+batch_size = 64
+buffer_size = 10000
+embedding_dimension = 128
+dense_dimension = 256
+
+
+my_data_set = E2EStandardTextObject(text_sequencer=content_token, data_loader=get_data_from_hgset
+                                    , sequence_lenth=sequence_length, set_name="tiny_shakespeare", sequence_len=sequence_length)
+
+
+vocab_size_shake = my_data_set.text_sequencer.get_vocab_size()
+#vocab_size_eng = my_data_set.context_vocab
+
+print(f"Shakespeare Vocab: {vocab_size_shake} , English Vocab: {vocab_size_eng}")
+
+
+training_dataset = my_data_set.batch_and_shuffle(batch_size=batch_size,buffer_size=buffer_size)
+
+trans_inst = Transformer(vocab_size=vocab_size_shake, context_vocab_size=vocab_size_eng
+                         ,embedding_dimension=embedding_dimension, context_length=sequence_length
+                         ,content_length=sequence_length, num_heads=num_heads
+                         , dense_dimension=dense_dimension, num_att_layers=num_att_layers)
+
+
+learning_rate = CustomSchedule(embedding_dimension)
+optimizer = tf.keras.optimizers.Adam(learning_rate, beta_1=0.9, beta_2=0.98,
+                                     epsilon=1e-9)
+
+trans_inst.compile(optimizer, loss=[masked_loss, None],metrics=["accuracy", masked_accuracy, None])
+my_csv_callback = csv_callback(project_directory, model_name)
+my_checkpoint_callback = checkpoint_callback(project_directory, model_name,5)
+
+
+tester= StandardTransformerGenerator(input_str="Hello this is my good friend he is a good person", source_model=trans_inst, output_len=sequence_length
+                                     ,context_sequencer=my_data_set.context_sequencer, content_sequencer=my_data_set.content_sequencer)
+output_callback = TransformerOutputCallback(tester, project_directory, model_name)
+
+trans_inst.fit(training_dataset, epochs=10, callbacks=[my_csv_callback, my_checkpoint_callback, output_callback])
+

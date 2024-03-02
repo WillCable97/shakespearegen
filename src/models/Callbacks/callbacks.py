@@ -1,7 +1,9 @@
 import os 
+import keras
 from keras.callbacks import CSVLogger, ModelCheckpoint
+from src.models.TextGenerators.TextGenerator import TextGenerator
 
-
+#seperate out dir creations ???
 
 def path_to_model_saves(base_path, input_model_name):
     path_to_model_saves = os.path.join(base_path, f"models/{input_model_name}")
@@ -23,8 +25,39 @@ def checkpoint_callback(base_path, input_model_name, period):
     if not os.path.exists(full_path): os.makedirs(full_path)
     checkpoint_prefix = os.path.join(full_path, "ckpt_{epoch}")
     checkpoint_callback = ModelCheckpoint(
-        filepath=checkpoint_prefix,
-        save_weights_only=True
+        filepath=checkpoint_prefix
+        ,save_weights_only=True
         ,save_freq='epoch'
         ,period=period)
     return checkpoint_callback
+
+
+class TransformerOutputCallback(keras.callbacks.Callback):
+    def __init__(self, input_generator: TextGenerator, base_path:str
+                 , input_model_name:str , file_name = 'text_outputs.txt'):
+        self.input_generator = input_generator
+        self.base_path = base_path
+        self.input_model_name = input_model_name
+        self.file_name = file_name
+        self.txt_generated = ''
+
+    def on_epoch_end(self, epoch, logs=None):
+        self.input_generator.source_model = self.model
+        txt = self.input_generator.generate_output()
+        print(f"\ngenerated text:  {txt}\n")
+        self.txt_generated += f"{epoch + 1}: {txt}\n"
+        self.write_output_to_file()
+
+    def write_output_to_file(self):
+        full_path = path_to_model_saves(self.base_path, self.input_model_name)
+        full_path = os.path.join(full_path, "text_tracker")
+        if not os.path.exists(full_path): os.makedirs(full_path)
+        file_path = os.path.join(full_path, self.file_name)
+        file = open(file_path, 'w+')
+        file.write(self.txt_generated)
+    
+
+
+
+
+
