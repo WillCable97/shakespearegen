@@ -19,7 +19,7 @@ def get_webscrape_data(data_path: str):
 
         all_eng_text += play_eng_lines
         all_og_text += play_og_lines
-    return all_eng_text[:4000], all_og_text[:4000]
+    return all_eng_text, all_og_text
 
 
 def get_lines_for_backwards_testing(data_path: str, sequence_len: int):

@@ -2,7 +2,7 @@ import os
 import tensorflow as tf
 
 from src.data.TextToToken.MyTfTokenizer import MyTfToken
-from src.data.DataObjects.TextDataObject import TransformerTextDataObject
+from src.data.DataObjects.TransformerTextDataObject import TransformerTextDataObject
 from src.data.DataLoaders import get_webscrape_data
 
 from src.models.Transformer.Transformer import Transformer
@@ -18,15 +18,15 @@ path_to_data_folder = os.path.join(project_directory, "data/processed/webdata")
 context_token = MyTfToken(use_bookmark=True)
 content_token = MyTfToken(use_bookmark=True)
 
-model_name = "WebTransformer"
+model_name = "WebTransformerUpdated"
 
-sequence_length = 80
+sequence_length = 50
 batch_size = 64
 buffer_size = 10000
 embedding_dimension = 128
 dense_dimension = 256
-num_heads = 2
-num_att_layers = 2
+num_heads = 12
+num_att_layers = 12
 dropout_rate = 0.1
 
 
@@ -39,7 +39,6 @@ vocab_size_shake = my_data_set.content_vocab
 vocab_size_eng = my_data_set.context_vocab
 
 print(f"Shakespeare Vocab: {vocab_size_shake} , English Vocab: {vocab_size_eng}")
-
 
 training_dataset = my_data_set.batch_and_shuffle(batch_size=batch_size,buffer_size=buffer_size)
 
