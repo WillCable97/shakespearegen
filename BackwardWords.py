@@ -2,7 +2,7 @@ import os
 import tensorflow as tf
 from src.data.TextToToken.CustomCharacterToken import CustomCharacterToken 
 from src.data.DataLoaders import get_lines_for_backwards_testing
-from src.data.DataObjects.TextDataObject import TransformerTextDataObject
+from src.data.DataObjects.TransformerTextDataObject import TransformerTextDataObject
 from src.models.Transformer.Transformer import Transformer
 from src.models.LossAndMetrics import masked_loss, CustomSchedule, masked_accuracy
 from src.models.Callbacks.callbacks import csv_callback, checkpoint_callback
@@ -24,7 +24,7 @@ buffer_size = 10000
 embedding_dimension = 128
 dense_dimension = 128
 num_heads = 2
-num_att_layers = 1
+num_att_layers = 0#1
 dropout_rate = 0.1
 
 my_data_set = TransformerTextDataObject(context_sequencer=context_token, content_sequencer=content_token

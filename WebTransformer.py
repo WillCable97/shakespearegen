@@ -20,19 +20,25 @@ content_token = MyTfToken(use_bookmark=True)
 
 model_name = "WebTransformerUpdated"
 
-sequence_length = 50
+sequence_length = 62
 batch_size = 64
 buffer_size = 10000
 embedding_dimension = 128
 dense_dimension = 256
-num_heads = 12
-num_att_layers = 12
+num_heads = 2
+num_att_layers = 1
 dropout_rate = 0.1
 
 
 my_data_set = TransformerTextDataObject(context_sequencer=context_token, content_sequencer=content_token
                                         , context_len=sequence_length, content_len=sequence_length
                                         ,data_loader=get_webscrape_data, data_path=path_to_data_folder)
+
+
+a, b = get_webscrape_data(data_path=path_to_data_folder)
+
+#print(b[1:5])
+#print(b[1])
 
 
 vocab_size_shake = my_data_set.content_vocab
@@ -57,8 +63,12 @@ my_csv_callback = csv_callback(project_directory, model_name)
 my_checkpoint_callback = checkpoint_callback(project_directory, model_name,5)
 
 
-tester= StandardTransformerGenerator(input_str="Hello this is my good friend he is a good person", source_model=trans_inst, output_len=sequence_length
+tester= StandardTransformerGenerator(input_str=a[0], source_model=trans_inst, output_len=sequence_length
                                      ,context_sequencer=my_data_set.context_sequencer, content_sequencer=my_data_set.content_sequencer)
 output_callback = TransformerOutputCallback(tester, project_directory, model_name)
+
+
+#print(tester.generate_output())
+
 
 trans_inst.fit(training_dataset, epochs=10, callbacks=[my_csv_callback, my_checkpoint_callback, output_callback])

@@ -32,7 +32,7 @@ def checkpoint_callback(base_path, input_model_name, period):
     return checkpoint_callback
 
 
-class TransformerOutputCallback(keras.callbacks.Callback):
+class OutputTextCallback(keras.callbacks.Callback):
     def __init__(self, input_generator: TextGenerator, base_path:str
                  , input_model_name:str , file_name = 'text_outputs.txt'):
         self.input_generator = input_generator
@@ -42,7 +42,7 @@ class TransformerOutputCallback(keras.callbacks.Callback):
         self.txt_generated = ''
 
     def on_epoch_end(self, epoch, logs=None):
-        self.input_generator.source_model = self.model
+        self.input_generator.source_model.set_weights(self.model.get_weights())
         txt = self.input_generator.generate_output()
         print(f"\ngenerated text:  {txt}\n")
         self.txt_generated += f"{epoch + 1}: {txt}\n"

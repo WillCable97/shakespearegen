@@ -1,5 +1,3 @@
-
-
 #Maps for data procesing
 def create_offset_labels(input_tensor):
     return input_tensor[:-1], input_tensor[1:]
