@@ -13,7 +13,7 @@ class EncoderComponent(tf.keras.layers.Layer):
         self.attention_block_layer = GlobalSelfAttention(num_heads=num_heads, embedding_dimension=embedding_dimension)
         self.dense_component = DenseComponent(embedding_dimension=embedding_dimension, dense_dimension=dense_dimension)
 
-    def call(self, x):
-        x = self.attention_block_layer(x)
+    def call(self, x, mask=None):
+        x = self.attention_block_layer(x, mask)
         x = self.dense_component(x)
         return x

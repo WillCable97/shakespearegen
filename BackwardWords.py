@@ -7,7 +7,7 @@ from src.models.Transformer.Transformer import Transformer
 from src.models.LossAndMetrics import masked_loss, CustomSchedule, masked_accuracy
 from src.models.Callbacks.callbacks import csv_callback, checkpoint_callback
 from src.models.TextGenerators.StandardTransformerGenerator import StandardTransformerGenerator
-from src.models.Callbacks.callbacks import TransformerOutputCallback
+from src.models.Callbacks.callbacks import OutputTextCallback
 
 
 #Project details
@@ -24,7 +24,7 @@ buffer_size = 10000
 embedding_dimension = 128
 dense_dimension = 128
 num_heads = 2
-num_att_layers = 0#1
+num_att_layers = 1
 dropout_rate = 0.1
 
 my_data_set = TransformerTextDataObject(context_sequencer=context_token, content_sequencer=content_token
@@ -49,18 +49,18 @@ learning_rate = CustomSchedule(embedding_dimension)
 optimizer = tf.keras.optimizers.Adam(learning_rate, beta_1=0.9, beta_2=0.98,
                                      epsilon=1e-9)
 
-trans_inst.compile(optimizer, loss=[masked_loss, None],metrics=["accuracy", masked_accuracy, None])
+trans_inst.compile(optimizer, loss=[masked_loss],metrics=["accuracy", masked_accuracy])
 my_csv_callback = csv_callback(project_directory, model_name)
 my_checkpoint_callback = checkpoint_callback(project_directory, model_name,5)
 
 
 tester= StandardTransformerGenerator(input_str="Hello There abc", source_model=trans_inst, output_len=sequence_length
                                      ,context_sequencer=my_data_set.context_sequencer, content_sequencer=my_data_set.content_sequencer)#,initializer='c')
-output_callback = TransformerOutputCallback(tester, project_directory, model_name)
+output_callback = OutputTextCallback(tester, project_directory, model_name)
 
 
 tester2= StandardTransformerGenerator(input_str="Whatsupp With U", source_model=trans_inst, output_len=sequence_length
                                      ,context_sequencer=my_data_set.context_sequencer, content_sequencer=my_data_set.content_sequencer)#,initializer='U')
-output_callback2 = TransformerOutputCallback(tester2, project_directory, model_name, 'file2.txt')
+output_callback2 = OutputTextCallback(tester2, project_directory, model_name, 'file2.txt')
 
 trans_inst.fit(training_dataset, epochs=10, callbacks=[my_csv_callback, my_checkpoint_callback, output_callback, output_callback2])

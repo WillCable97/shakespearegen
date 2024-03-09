@@ -20,10 +20,15 @@ class DecoderLayer(tf.keras.layers.Layer):
         
     def call(self, context, content):
         x = self.positional_embedding(content)
+
+        poistional_mask = x._keras_mask[:, tf.newaxis, :]
+        del x._keras_mask
+
         x = self.dropout(x)
         
+        
         for decoder in self.dense_sequence:
-            x = decoder(x, context)
+            x = decoder(x, context, mask=poistional_mask)
 
         return x
 

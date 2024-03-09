@@ -37,7 +37,6 @@ class PositionalEmbedding(tf.keras.layers.Layer):
         return self.embedding_layer.compute_mask(*args, **kwargs)
     
     def call(self, x):
-        #inner_seq_len = tf.shape(x)[1]
         x = self.embedding_layer(x)
         x = x + self.positional_matrix[tf.newaxis, :, :]
         return x

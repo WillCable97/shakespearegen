@@ -64,4 +64,4 @@ tester= StandardTransformerGenerator(input_str=a[0], source_model=trans_inst, ou
                                      ,context_sequencer=my_data_set.context_sequencer, content_sequencer=my_data_set.content_sequencer)
 output_callback = OutputTextCallback(tester, project_directory, model_name)
 
-#trans_inst.fit(training_dataset, epochs=10, callbacks=[my_csv_callback, my_checkpoint_callback, output_callback])
+trans_inst.fit(training_dataset, epochs=10, callbacks=[my_csv_callback, my_checkpoint_callback, output_callback])
