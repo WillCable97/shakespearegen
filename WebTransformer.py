@@ -8,7 +8,7 @@ from src.data.DataLoaders import get_webscrape_data
 from src.models.Transformer.Transformer import Transformer
 
 from src.models.LossAndMetrics import masked_loss, masked_accuracy, CustomSchedule
-from src.models.Callbacks.callbacks import csv_callback, checkpoint_callback, TransformerOutputCallback
+from src.models.Callbacks.callbacks import csv_callback, checkpoint_callback, OutputTextCallback
 from src.models.TextGenerators.StandardTransformerGenerator import StandardTransformerGenerator
 
 
@@ -51,17 +51,17 @@ learning_rate = CustomSchedule(embedding_dimension)
 optimizer = tf.keras.optimizers.Adam(learning_rate, beta_1=0.9, beta_2=0.98,
                                      epsilon=1e-9)
 
-trans_inst.compile(optimizer, loss=[masked_loss, None],metrics=["accuracy", masked_accuracy, None])
+trans_inst.compile(optimizer, loss=[masked_loss],metrics=["accuracy", masked_accuracy])
 my_csv_callback = csv_callback(project_directory, model_name)
 my_checkpoint_callback = checkpoint_callback(project_directory, model_name,5)
 
 
+
+
+a, b = get_webscrape_data(data_path=path_to_data_folder)
+
 tester= StandardTransformerGenerator(input_str=a[0], source_model=trans_inst, output_len=sequence_length
                                      ,context_sequencer=my_data_set.context_sequencer, content_sequencer=my_data_set.content_sequencer)
-output_callback = TransformerOutputCallback(tester, project_directory, model_name)
+output_callback = OutputTextCallback(tester, project_directory, model_name)
 
-
-#print(tester.generate_output())
-
-
-trans_inst.fit(training_dataset, epochs=10, callbacks=[my_csv_callback, my_checkpoint_callback, output_callback])
+#trans_inst.fit(training_dataset, epochs=10, callbacks=[my_csv_callback, my_checkpoint_callback, output_callback])

@@ -1,5 +1,5 @@
 from src.data.TextToToken.TextToToken import TextToToken
-from keras.preprocessing.text import Tokenizer
+from tensorflow.keras.preprocessing.text import Tokenizer
 
 class MyTfToken(TextToToken):
     """
