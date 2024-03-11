@@ -24,7 +24,7 @@ sequence_length = 100
 batch_size = 64
 buffer_size = 10000
 embedding_dimension = 256
-dense_dimension = 256
+dense_dimension = 1024
 epoch_count = 10
 
 my_data_set = E2EStandardTextObject(text_sequencer=content_token, data_loader=get_data_from_hgset
