@@ -18,14 +18,14 @@ project_directory = os.path.abspath("./")
 path_to_data_folder = os.path.join(project_directory, "data/processed/webdata")
 content_token = CustomCharacterToken(use_bookmark=False)
 
-model_name = "RNN Model"
+model_name = "RNN100Seq256Emb512Dense"
 
 sequence_length = 100
 batch_size = 64
 buffer_size = 10000
 embedding_dimension = 256
-dense_dimension = 1024
-epoch_count = 10
+dense_dimension = 512
+epoch_count = 30
 
 my_data_set = E2EStandardTextObject(text_sequencer=content_token, data_loader=get_data_from_hgset
                                     , sequence_lenth=sequence_length, set_name="tiny_shakespeare", sequence_len=sequence_length)

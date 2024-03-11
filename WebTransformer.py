@@ -2,6 +2,7 @@ import os
 import tensorflow as tf
 
 from src.data.TextToToken.MyTfTokenizer import MyTfToken
+from src.data.TextToToken.CustomCharacterToken import CustomCharacterToken
 from src.data.DataObjects.TransformerTextDataObject import TransformerTextDataObject
 from src.data.DataLoaders import get_webscrape_data
 
@@ -15,19 +16,23 @@ from src.models.TextGenerators.StandardTransformerGenerator import StandardTrans
 #Project details
 project_directory = os.path.abspath("./")
 path_to_data_folder = os.path.join(project_directory, "data/processed/webdata")
-context_token = MyTfToken(use_bookmark=True)
-content_token = MyTfToken(use_bookmark=True)
+#context_token = MyTfToken(use_bookmark=True)
+#content_token = MyTfToken(use_bookmark=True)
 
-model_name = "WebTransformerUpdated"
+context_token = CustomCharacterToken(use_bookmark=True)
+content_token = CustomCharacterToken(use_bookmark=True)
 
-sequence_length = 62
+model_name = "WebTransformer_CharInd_128e_256d_2h_1l"
+
+sequence_length = 100
 batch_size = 64
 buffer_size = 10000
 embedding_dimension = 128
 dense_dimension = 256
-num_heads = 2
-num_att_layers = 1
+num_heads = 4
+num_att_layers = 2
 dropout_rate = 0.1
+epoch_count = 10
 
 
 my_data_set = TransformerTextDataObject(context_sequencer=context_token, content_sequencer=content_token
@@ -55,13 +60,10 @@ trans_inst.compile(optimizer, loss=[masked_loss],metrics=["accuracy", masked_acc
 my_csv_callback = csv_callback(project_directory, model_name)
 my_checkpoint_callback = checkpoint_callback(project_directory, model_name,5)
 
-
-
-
 a, b = get_webscrape_data(data_path=path_to_data_folder)
 
-tester= StandardTransformerGenerator(input_str=a[0], source_model=trans_inst, output_len=sequence_length
+tester= StandardTransformerGenerator(input_str="hello this is my brother, he is a good person", source_model=trans_inst, output_len=sequence_length
                                      ,context_sequencer=my_data_set.context_sequencer, content_sequencer=my_data_set.content_sequencer)
 output_callback = OutputTextCallback(tester, project_directory, model_name)
 
-trans_inst.fit(training_dataset, epochs=10, callbacks=[my_csv_callback, my_checkpoint_callback, output_callback])
+trans_inst.fit(training_dataset, epochs=epoch_count, callbacks=[my_csv_callback, my_checkpoint_callback, output_callback])
