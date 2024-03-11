@@ -1,5 +1,7 @@
 import os 
 import tensorflow as tf
+import keras
+import numpy as np
 
 from src.data.TextToToken.CustomCharacterToken import CustomCharacterToken
 from src.data.DataObjects.StandardTextDataObject import E2EStandardTextObject
@@ -36,18 +38,24 @@ print(f"Vocab: {vocab_size_shake}")
 training_dataset = my_data_set.batch_and_shuffle(batch_size=batch_size,buffer_size=buffer_size)
 
 lstm_inst = LSTM_model(vocab_size=vocab_size_shake + 1, embedding_dim=embedding_dimension
-                       , rnn_units=dense_dimension, batch_size=batch_size)
+                       , rnn_units=dense_dimension, batch_size=batch_size, seq_len=sequence_length)
 
 lstm_gen_inst = LSTM_model(vocab_size=vocab_size_shake + 1, embedding_dim=embedding_dimension
-                       , rnn_units=dense_dimension, batch_size=1) #This is because models need to be loaded into a model of batch size 1 tp produce output
+                       , rnn_units=dense_dimension, batch_size=1, seq_len=sequence_length) #This is because models need to be loaded into a model of batch size 1 tp produce output
 
 #Compiling
 loss_inst = SparseCategoricalCrossentropy(from_logits=True)
+
 lstm_inst.compile("adam", loss=loss_inst)
+lstm_gen_inst.build(tf.TensorShape([1, None])) 
+
+
+#make a forward pass to init weights (I HATE THAT THIS IS NECESSARY !!!)
+f_pass_output = lstm_gen_inst(np.array([my_data_set.token_list[0]]))
 
 #Callbacks
 my_csv_callback = csv_callback(project_directory, model_name)
-my_checkpoint_callback = checkpoint_callback(project_directory, model_name,5)
+my_checkpoint_callback = checkpoint_callback(project_directory, model_name,batch_size * 5)
 test = RecurrentNetworkGenerator("the man went", lstm_gen_inst, content_token, 100)
 output_callback = OutputTextCallback(test, project_directory, model_name)
 

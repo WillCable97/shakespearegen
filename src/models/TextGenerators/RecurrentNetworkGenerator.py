@@ -14,7 +14,7 @@ class RecurrentNetworkGenerator(TextGenerator):
         self.input_str = input_str
         self.output_len = output_len
         self.source_model.build(tf.TensorShape([1, None]))
-        self.source_model.reset_states()
+        #self.source_model.reset_states()
         
 
     def generate_output(self):

@@ -1,5 +1,6 @@
 import os
 import pickle
+from datasets import load_dataset
 
 #Get webscrape data lists
 def get_webscrape_data(data_path: str):
@@ -20,14 +21,7 @@ def get_webscrape_data(data_path: str):
         all_eng_text += play_eng_lines
         all_og_text += play_og_lines
 
-    #all_eng_text = [[all_eng_text[15], all_eng_text[54], all_eng_text[67], all_eng_text[35]] for x in all_eng_text]
-    #all_og_text = [[all_og_text[15], all_og_text[54], all_og_text[67], all_og_text[35]] for x in all_og_text]
-
-    #all_eng_text = [a for b in all_eng_text for a in b]
-    #all_og_text = [a for b in all_og_text for a in b]
-
-
-    return all_eng_text[:5000], all_og_text[:5000]
+    return all_eng_text, all_og_text#[:5000]
 
 
 def get_lines_for_backwards_testing(data_path: str, sequence_len: int):
@@ -47,7 +41,7 @@ def get_lines_for_backwards_testing(data_path: str, sequence_len: int):
     return forward_list, back_list
 
 
-from datasets import load_dataset
+
 
 def get_data_from_hgset(set_name: str, sequence_len: int):
     hg_data = load_dataset(set_name)

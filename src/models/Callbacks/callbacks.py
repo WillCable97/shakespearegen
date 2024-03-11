@@ -34,6 +34,7 @@ def checkpoint_callback(base_path, input_model_name, period):
 class OutputTextCallback(keras.callbacks.Callback):
     def __init__(self, input_generator: TextGenerator, base_path:str
                  , input_model_name:str , file_name = 'text_outputs.txt'):
+        super().__init__()
         self.input_generator = input_generator
         self.base_path = base_path
         self.input_model_name = input_model_name
