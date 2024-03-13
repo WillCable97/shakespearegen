@@ -1,5 +1,24 @@
+from src.data.TextToToken.WordpieceToken import WordpieceToken
+from src.data.DataLoaders import get_webscrape_data
+
+import os
 
 
+#Project details
+project_directory = os.path.abspath("./")
+path_to_data_folder = os.path.join(project_directory, "data/processed/webdata")
+
+A = WordpieceToken(vocab_size=200)
+
+a, b = get_webscrape_data(path_to_data_folder)
+
+
+t = A.init_with_input(a, sequnce_len=50)
+
+
+
+
+"""
 import tensorflow as tf
 from keras.models import clone_model
 
@@ -27,3 +46,4 @@ lstm_gen_inst.build(tf.TensorShape([1, None]))
 
 # Check if the model is built successfully
 print(lstm_gen_inst.get_weights())
+"""
