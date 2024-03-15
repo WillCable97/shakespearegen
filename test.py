@@ -1,49 +1,46 @@
-from src.data.TextToToken.WordpieceToken import WordpieceToken
-from src.data.DataLoaders import get_webscrape_data
-
-import os
+import tensorflow as tf
+import keras_nlp
 
 
-#Project details
-project_directory = os.path.abspath("./")
-path_to_data_folder = os.path.join(project_directory, "data/processed/webdata")
+# Example vocabulary
+vocab = ["[PAD]", "[UNK]", "he", "hello", "low", "##llo", "w", "world"]
 
-A = WordpieceToken(vocab_size=200)
+# Initialize WordpieceTokenizer with the vocabulary
+tokenizer = keras_nlp.tokenizers.WordPieceTokenizer(vocabulary = vocab)
 
-a, b = get_webscrape_data(path_to_data_folder)
+# Get token for one element in the vocabulary
+word = "hello"
+tokens = tokenizer.tokenize([word])[0].numpy()
 
+# Concatenate tokens to form the word
+word_decoded = ""
+for token_index in tokens:
+    token = vocab[token_index]
+    # Skip special tokens
+    if not token.startswith("##"):
+        word_decoded += token
 
-t = A.init_with_input(a, sequnce_len=50)
-
+print(f"Token for '{word}': {word_decoded}")
 
 
 
 """
 import tensorflow as tf
-from keras.models import clone_model
+import keras_nlp
 
-class LSTM_model(tf.keras.Model):
-    def __init__(self, vocab_size:int, embedding_dim: int, rnn_units:int, batch_size:int):
-        super().__init__()
-        self.emb_layer = tf.keras.layers.Embedding(vocab_size, embedding_dim)
-        self.lstm_layer = tf.keras.layers.LSTM(rnn_units, return_sequences=True, stateful=True, recurrent_initializer='glorot_uniform')
-        self.dense_comp = tf.keras.layers.Dense(vocab_size)
-    def build(self, input_shape):
-        super(LSTM_model, self).build(input_shape)
-        
-    def call(self, input):
-        input = self.emb_layer(input)
-        input = self.lstm_layer(input)
-        input = self.dense_comp(input)
-        return input
+# Example vocabulary
+vocab = ["[PAD]", "[UNK]", "hello", "world", "how", "are", "you"]
 
-# Create an instance of the model
-lstm_gen_inst = LSTM_model(vocab_size=65 + 1, embedding_dim=256,
-                            rnn_units=256, batch_size=1)
+# Initialize WordpieceTokenizer with the vocabulary
+tokenizer = keras_nlp.tokenizers.WordPieceTokenizer(vocabulary = vocab)#, sequence_length = self.sequence_len)
+#text.WordpieceTokenizer(vocab)
 
-# Build the model
-lstm_gen_inst.build(tf.TensorShape([1, None]))
+# Get token for one element in the vocabulary
+word = "hello"
+token_index = tokenizer.tokenize([word])[0].numpy()[0]
 
-# Check if the model is built successfully
-print(lstm_gen_inst.get_weights())
+# Get the token from the vocabulary using the index
+token = tokenizer.detokenize([[token_index]]).numpy()[0].decode("utf-8")
+
+print(f"Token for '{word}': {token}")
 """

@@ -22,7 +22,7 @@ class TransformerTextDataObject:
         self.context_vocab = self.context_sequencer.get_vocab_size()
         self.content_vocab = self.content_sequencer.get_vocab_size()
 
-        #Create data by defaul
+        #Create data by default
         self.pad_sequences()
         self.create_tf_dataset()
         self.create_label()
