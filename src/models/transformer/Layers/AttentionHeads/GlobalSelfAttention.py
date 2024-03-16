@@ -5,8 +5,8 @@ class GlobalSelfAttention(BaseAttention):
     """
         Self attention without Masking
     """
-    def call(self, x, mask=None):
-        attention_output = self.multi_head_attn(query=x,value=x,key=x, attention_mask = mask)
+    def call(self, x):
+        attention_output = self.multi_head_attn(query=x,value=x,key=x)
         x = self.add([x, attention_output])
         x = self.layer_norm(x)
         return x

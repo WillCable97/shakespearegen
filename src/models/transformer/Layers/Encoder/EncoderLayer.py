@@ -18,13 +18,9 @@ class EncoderLayer(tf.keras.layers.Layer):
         
     def call(self, context):
         x = self.positional_embedding(context)
-        
-        poistional_mask = x._keras_mask[:, tf.newaxis, :]
-        del x._keras_mask
-        
         x = self.dropout(x)
         
         for encoder in self.dense_sequence:
-            x = encoder(x, mask=poistional_mask)
+            x = encoder(x)
 
         return x

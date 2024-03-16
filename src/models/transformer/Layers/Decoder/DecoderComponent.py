@@ -14,8 +14,8 @@ class DecoderComponent(tf.keras.layers.Layer):
         self.cross_attention = CrossAttention(num_heads=num_heads, embedding_dimension=embedding_dimension)
         self.dense_component = DenseComponent(embedding_dimension=embedding_dimension, dense_dimension=dense_dimension)
 
-    def call(self, x, context, mask=None):
-        x = self.attention_block_layer(x, mask=mask)
+    def call(self, x, context):
+        x = self.attention_block_layer(x)
         x = self.cross_attention(x=x, context=context)
         x = self.dense_component(x)
         return x

@@ -16,17 +16,15 @@ from src.models.TextGenerators.StandardTransformerGenerator import StandardTrans
 project_directory = os.path.abspath("./")
 path_to_data_folder = os.path.join(project_directory, "data/processed/webdata")
 
-
-
-model_name = "TEMPTHING2"
+model_name = "TEMPTHING3"
 
 sequence_length = 30
 batch_size = 64
 buffer_size = 10000
 embedding_dimension = 128
 dense_dimension = 256
-num_heads = 2
-num_att_layers = 2
+num_heads = 5
+num_att_layers = 3
 dropout_rate = 0.1
 epoch_count = 10
 
@@ -68,4 +66,9 @@ tester= StandardTransformerGenerator(input_str="hello this is my brother, he is 
                                      ,context_sequencer=my_data_set.context_sequencer, content_sequencer=my_data_set.content_sequencer)
 output_callback = OutputTextCallback(tester, project_directory, model_name)
 
-trans_inst.fit(training_dataset, epochs=epoch_count, callbacks=[my_csv_callback, my_checkpoint_callback, output_callback])
+
+tester2= StandardTransformerGenerator(input_str="this morning the bird went to her nest and laid an egg", source_model=trans_inst, output_len=sequence_length
+                                     ,context_sequencer=my_data_set.context_sequencer, content_sequencer=my_data_set.content_sequencer)
+output_callback2 = OutputTextCallback(tester2, project_directory, model_name)
+
+trans_inst.fit(training_dataset, epochs=epoch_count, callbacks=[my_csv_callback, my_checkpoint_callback, output_callback, output_callback2])
