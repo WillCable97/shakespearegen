@@ -22,14 +22,14 @@ sequence_length = 30
 batch_size = 64
 buffer_size = 10000
 embedding_dimension = 128
-dense_dimension = 256
-num_heads = 5
-num_att_layers = 3
+dense_dimension = 512
+num_heads = 8
+num_att_layers = 8
 dropout_rate = 0.1
 epoch_count = 10
 
-context_token = WordpieceToken(vocab_size=2000, sequence_len=sequence_length)
-content_token = WordpieceToken(vocab_size=2000, sequence_len=sequence_length)
+context_token = WordpieceToken(vocab_size=5000, sequence_len=sequence_length)
+content_token = WordpieceToken(vocab_size=5000, sequence_len=sequence_length)
 
 #all_eng_text, all_og_text = get_webscrape_data(data_path=path_to_data_folder)
 #context_token.init_with_input(all_eng_text)

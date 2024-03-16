@@ -1,6 +1,7 @@
 import os
 import pickle
 from datasets import load_dataset
+import numpy as np
 
 #Get webscrape data lists
 def get_webscrape_data(data_path: str):
@@ -22,18 +23,6 @@ def get_webscrape_data(data_path: str):
         all_og_text += play_og_lines
 
     return all_eng_text, all_og_text#[:5000]
-
-
-
-def get_webscrape_data_withends(data_path: str):
-    all_eng_text, all_og_tex = get_webscrape_data(data_path)
-
-    all_eng_text = ["[START] " + x + "[END]" for x in all_eng_text]
-    all_og_tex = ["[START] " + x + " [END]" for x in all_og_tex]
-    
-    return all_eng_text, all_og_tex
-
-
 
 def get_lines_for_backwards_testing(data_path: str, sequence_len: int):
     all_eng_text, _ = get_webscrape_data(data_path=data_path)
@@ -65,3 +54,20 @@ def get_data_from_hgset(set_name: str, sequence_len: int):
         ret_list.append(seq_string)
     
     return ret_list
+
+
+
+def read_text_data(file_path: str):
+    with open(file_path, "r") as file:
+        lines = file.readlines()
+    return lines
+    
+
+def get_webscrape_data_withends(data_path: str):
+    all_eng_text, all_og_tex = get_webscrape_data(data_path)
+
+    all_eng_text = ["* " + x + " *" for x in all_eng_text]
+    all_og_tex = ["* " + x + " *" for x in all_og_tex]
+    
+    return all_eng_text, all_og_tex
+

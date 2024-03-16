@@ -2,9 +2,9 @@ import os
 import tensorflow as tf
 import numpy as np
 
-from src.data.TextToToken.CustomCharacterToken import CustomCharacterToken
-from src.data.DataObjects.StandardTextDataObject import E2EStandardTextObject
-from src.data.DataLoaders import get_data_from_hgset
+from src.data.TextToToken.WordpieceToken import WordpieceToken
+from src.data.DataObjects.StandardTextDataObject import StandardTextDataObject
+from src.data.DataLoaders import read_text_data
 
 from src.models.RecurrentModels.RNN_model import RNN_model
 
@@ -16,21 +16,38 @@ from src.models.TextGenerators.RecurrentNetworkGenerator import RecurrentNetwork
 #Project details
 project_directory = os.path.abspath("./")
 path_to_data_folder = os.path.join(project_directory, "data/processed/webdata")
-content_token = CustomCharacterToken(use_bookmark=False)
+file_path = os.path.join(project_directory, "data", "processed", "linetext.txt")
 
-model_name = "TEST3"# "RNN100Seq256Emb512Dense"
 
-sequence_length = 100
+model_name = "TEMPTHING"
+
+sequence_length = 20
 batch_size = 64
 buffer_size = 10000
 embedding_dimension = 256
 dense_dimension = 512
 epoch_count = 30
 
-my_data_set = E2EStandardTextObject(text_sequencer=content_token, data_loader=get_data_from_hgset
-                                    , sequence_lenth=sequence_length, set_name="tiny_shakespeare", sequence_len=sequence_length)
+content_token = WordpieceToken(vocab_size=2000, sequence_len=sequence_length)
 
 
+my_data_set = StandardTextDataObject(text_sequencer=content_token, data_loader=read_text_data
+                                    , sequence_lenth=sequence_length, file_path = file_path)
+
+
+#Hacky work around for padding isues with new tokeniser
+flat_token_l = np.array(my_data_set.token_list).reshape(-1)
+print(f"Flat Shape List: {flat_token_l.shape}")
+flat_token_l = flat_token_l[flat_token_l != 0]
+token_len = len(flat_token_l)
+seq_count = int(token_len/sequence_length)
+flat_token_l = flat_token_l[:seq_count * sequence_length]
+flat_token_l = flat_token_l.reshape((seq_count, sequence_length))
+print(f"Index Shape List: {flat_token_l.shape}")
+my_data_set.token_list = flat_token_l.tolist()
+
+my_data_set.create_tf_dataset()
+my_data_set.create_label()
 vocab_size_shake = my_data_set.text_sequencer.get_vocab_size()
 print(f"Vocab: {vocab_size_shake}")
 
@@ -42,22 +59,10 @@ lstm_inst = RNN_model(vocab_size=vocab_size_shake + 1, embedding_dim=embedding_d
 lstm_gen_inst = RNN_model(vocab_size=vocab_size_shake + 1, embedding_dim=embedding_dimension
                        , rnn_units=dense_dimension, batch_size=1) #This is because models need to be loaded into a model of batch size 1 tp produce output
 
-#Accuracy models
-#acc_metric = tf.keras.metrics.Accuracy()
-#recall_metrics = tf.keras.metrics.Recall()
-#f1_metric = tf.keras.metrics.F1Score()
-#prec_metric = tf.keras.metrics.Precision()
-
 #Compiling
 loss_inst = SparseCategoricalCrossentropy(from_logits=True)
-lstm_inst.compile("adam", loss=loss_inst
-                  ,metrics=["accuracy", prec_metric])
-
+lstm_inst.compile("adam", loss=loss_inst)
 lstm_gen_inst.build(tf.TensorShape([1, None])) 
-
-
-#make a forward pass to init weights (I HATE THAT THIS IS NECESSARY !!!)
-#f_pass_output = lstm_gen_inst(np.array([my_data_set.token_list[0]]))
 
 #Callbacks
 my_csv_callback = csv_callback(project_directory, model_name)
@@ -66,7 +71,7 @@ test = RecurrentNetworkGenerator("the man went", lstm_gen_inst, content_token, 1
 output_callback = OutputTextCallback(test, project_directory, model_name)
 
 
-
+print(test.generate_output())
 
 #Fit model
 lstm_inst.fit(training_dataset, epochs=epoch_count, callbacks=[my_csv_callback, my_checkpoint_callback, output_callback])
