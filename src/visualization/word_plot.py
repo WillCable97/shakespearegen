@@ -79,7 +79,4 @@ tokens = [str(i) for i in range(vocab)]
 token_vals = [my_token.detokenise([[x]]) for x in tokens]
 
 
-
-
-
 create_word_vis(embedding_weights, token_vals, 5, -1)

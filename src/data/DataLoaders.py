@@ -71,3 +71,6 @@ def get_webscrape_data_withends(data_path: str):
     
     return all_eng_text, all_og_tex
 
+
+def identity_loader(input):
+    return input
