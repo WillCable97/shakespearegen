@@ -18,7 +18,7 @@ project_directory = os.path.abspath("./")
 path_to_data_folder = os.path.join(project_directory, "data/processed/webdata")
 content_token = CustomCharacterToken(use_bookmark=False)
 
-model_name = "TEST3"# "RNN100Seq256Emb512Dense"
+model_name = "RNN100Seq256Emb512Dense"
 
 sequence_length = 100
 batch_size = 64
@@ -50,8 +50,7 @@ lstm_gen_inst = RNN_model(vocab_size=vocab_size_shake + 1, embedding_dim=embeddi
 
 #Compiling
 loss_inst = SparseCategoricalCrossentropy(from_logits=True)
-lstm_inst.compile("adam", loss=loss_inst
-                  ,metrics=["accuracy", prec_metric])
+lstm_inst.compile("adam", loss=loss_inst, metrics=["accuracy"])
 
 lstm_gen_inst.build(tf.TensorShape([1, None])) 
 
@@ -64,9 +63,6 @@ my_csv_callback = csv_callback(project_directory, model_name)
 my_checkpoint_callback = checkpoint_callback(project_directory, model_name,batch_size * 5)
 test = RecurrentNetworkGenerator("the man went", lstm_gen_inst, content_token, 100)
 output_callback = OutputTextCallback(test, project_directory, model_name)
-
-
-
 
 #Fit model
 lstm_inst.fit(training_dataset, epochs=epoch_count, callbacks=[my_csv_callback, my_checkpoint_callback, output_callback])

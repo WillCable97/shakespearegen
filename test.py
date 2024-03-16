@@ -1,46 +1,45 @@
-import tensorflow as tf
-import keras_nlp
+import numpy as np
+from sklearn.manifold import TSNE
+from sklearn.cluster import KMeans
+import matplotlib.pyplot as plt
 
+# Assuming you have trained an RNN model and obtained word embeddings
+# Replace this with your actual trained RNN model and data
+# For demonstration purposes, let's generate random embeddings and labels
+num_words = 1000
+embedding_dim = 100
+embeddings = np.random.rand(num_words, embedding_dim)
 
-# Example vocabulary
-vocab = ["[PAD]", "[UNK]", "he", "hello", "low", "##llo", "w", "world"]
+# Generate random labels for each embedding
+labels = [str(i) for i in range(num_words)]
 
-# Initialize WordpieceTokenizer with the vocabulary
-tokenizer = keras_nlp.tokenizers.WordPieceTokenizer(vocabulary = vocab)
+# Perform t-SNE dimensionality reduction on embeddings
+tsne = TSNE(n_components=2, random_state=42)
+embeddings_tsne = tsne.fit_transform(embeddings)
 
-# Get token for one element in the vocabulary
-word = "hello"
-tokens = tokenizer.tokenize([word])[0].numpy()
+# Perform k-means clustering on the embeddings
+num_clusters = 5  # Adjust the number of clusters as needed
+kmeans = KMeans(n_clusters=num_clusters, random_state=42)
+cluster_labels = kmeans.fit_predict(embeddings_tsne)
 
-# Concatenate tokens to form the word
-word_decoded = ""
-for token_index in tokens:
-    token = vocab[token_index]
-    # Skip special tokens
-    if not token.startswith("##"):
-        word_decoded += token
+# Define colors for each cluster
+cluster_colors = ['blue', 'green', 'red', 'purple', 'orange']  # Add more colors as needed
 
-print(f"Token for '{word}': {word_decoded}")
+# Plot t-SNE visualization with annotated closest examples per cluster and background colors
+plt.figure(figsize=(10, 8))
+for i in range(num_clusters):
+    cluster_points = embeddings_tsne[cluster_labels == i][:5]  # Limit to 5 examples per cluster
+    centroid = kmeans.cluster_centers_[i]
+    plt.scatter(cluster_points[:, 0], cluster_points[:, 1], marker='o', color=cluster_colors[i], label=f'Cluster {i}')
+    plt.scatter(centroid[0], centroid[1], marker='x', color='black', s=100)
+    
+    # Annotate closest embeddings with labels
+    for point in cluster_points:
+        idx = np.where((embeddings_tsne == point).all(axis=1))[0][0]
+        plt.annotate(labels[idx], (point[0], point[1]), textcoords="offset points", xytext=(0,10), ha='center')
 
-
-
-"""
-import tensorflow as tf
-import keras_nlp
-
-# Example vocabulary
-vocab = ["[PAD]", "[UNK]", "hello", "world", "how", "are", "you"]
-
-# Initialize WordpieceTokenizer with the vocabulary
-tokenizer = keras_nlp.tokenizers.WordPieceTokenizer(vocabulary = vocab)#, sequence_length = self.sequence_len)
-#text.WordpieceTokenizer(vocab)
-
-# Get token for one element in the vocabulary
-word = "hello"
-token_index = tokenizer.tokenize([word])[0].numpy()[0]
-
-# Get the token from the vocabulary using the index
-token = tokenizer.detokenize([[token_index]]).numpy()[0].decode("utf-8")
-
-print(f"Token for '{word}': {token}")
-"""
+plt.title('t-SNE Visualization of Word Embeddings with Clusters and Closest Examples')
+plt.xlabel('t-SNE Dimension 1')
+plt.ylabel('t-SNE Dimension 2')
+plt.legend()
+plt.show()
