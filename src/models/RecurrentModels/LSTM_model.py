@@ -1,12 +1,16 @@
 import tensorflow as tf
 from keras.models import Model
-from keras.layers import Embedding, LSTM, Dense, Input
+from keras.layers import Embedding, LSTM, Dense, BatchNormalization#, Dropout
+from tensorflow.keras import regularizers
 
 class LSTM_model(Model):
-    def __init__(self, vocab_size, embedding_dim, rnn_units, batch_size, seq_len):
+    def __init__(self, vocab_size, embedding_dim, rnn_units, batch_size,regularizer, dropout_rate):
         super().__init__()
-        self.emb_layer = Embedding(vocab_size, embedding_dim)
-        self.lstm_layer = LSTM(rnn_units, return_sequences=True, stateful=True, recurrent_initializer='glorot_uniform')
+        self.emb_layer = Embedding(vocab_size, embedding_dim, batch_input_shape=[batch_size, None])
+        #self.lstm_layer = LSTM(rnn_units, return_sequences=True, stateful=True, recurrent_initializer='glorot_uniform')
+        self.lstm_layer = LSTM(rnn_units, return_sequences=True, stateful=True, recurrent_initializer='glorot_uniform'
+                               , kernel_regularizer=regularizers.l2(regularizer), dropout=dropout_rate)
+        self.batch_norm = BatchNormalization()
         self.dense_comp = Dense(vocab_size)
 
     def build(self, input_shape):
@@ -15,6 +19,7 @@ class LSTM_model(Model):
     def call(self, input):
         input = self.emb_layer(input)
         input = self.lstm_layer(input)
+        input = self.batch_norm(input)
         input = self.dense_comp(input)
         return input
     
