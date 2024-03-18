@@ -56,12 +56,34 @@ def get_data_from_hgset(set_name: str, sequence_len: int):
     return ret_list
 
 
-
 def read_text_data(file_path: str):
     with open(file_path, "r") as file:
         lines = file.readlines()
     return lines
-    
+
+
+def read_text_with_sequences(file_path: str, sequence_len: int, len_type = "char"):
+    lines = read_text_data(file_path)
+    all_lines = ''.join(lines)
+
+    section_seperator =''
+
+    if len_type == "word":
+        all_lines = all_lines.replace("\n", " ")
+        all_lines = all_lines.replace("-", " ")
+        all_lines = all_lines.split(' ')
+        section_seperator  = ' '
+
+    str_len = len(all_lines)
+    seq_count = int(str_len/sequence_len)
+    ret_list = []
+
+    for i in range(seq_count):
+        seq_string = all_lines[i*sequence_len:(i+1)*sequence_len]
+        ret_list.append(f'{section_seperator}'.join(seq_string))
+
+    return ret_list#[0:5]
+
 
 def get_webscrape_data_withends(data_path: str):
     all_eng_text, all_og_tex = get_webscrape_data(data_path)

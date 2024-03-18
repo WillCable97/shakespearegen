@@ -36,7 +36,7 @@ class StandardTextDataObject:
         pass
 
     def create_tf_dataset(self):
-        self.tf_dataset = tf.data.Dataset.from_tensor_slices(self.token_list)
+        self.tf_dataset = tf.data.Dataset.from_tensor_slices(self.token_text)
 
     def create_label(self):
         self.tf_dataset = self.tf_dataset.map(create_offset_labels)
@@ -54,5 +54,11 @@ class E2EStandardTextObject(StandardTextDataObject):
                  , sequence_lenth: int, validation_prop = 0, **kwargs):
         super().__init__(text_sequencer, data_loader, sequence_lenth, validation_prop, **kwargs)
         self.pad_sequences(self.sequence_lenth)
+        
+        #print(self.raw_data)
+        #print(self.token_text[0])
+        #print(type(self.token_text))
+        #print(self.token_text.shape)
+        
         self.create_tf_dataset()
         self.create_label()
