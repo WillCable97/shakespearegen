@@ -16,17 +16,17 @@ from src.models.TextGenerators.StandardTransformerGenerator import StandardTrans
 project_directory = os.path.abspath("./")
 path_to_data_folder = os.path.join(project_directory, "data/processed/webdata")
 
-model_name = "TEMPTHING3"
+model_name = "Worpiece_Trans_V2"
 
 sequence_length = 30
 batch_size = 64
 buffer_size = 10000
 embedding_dimension = 128
 dense_dimension = 512
-num_heads = 8
-num_att_layers = 8
+num_heads = 4
+num_att_layers = 4
 dropout_rate = 0.1
-epoch_count = 10
+epoch_count = 20
 
 context_token = WordpieceToken(vocab_size=5000, sequence_len=sequence_length)
 content_token = WordpieceToken(vocab_size=5000, sequence_len=sequence_length)
@@ -41,7 +41,6 @@ my_data_set = TransformerTextDataObject(context_sequencer=context_token, content
 vocab_size_shake = my_data_set.content_vocab
 vocab_size_eng = my_data_set.context_vocab
 print(f"Shakespeare Vocab: {vocab_size_shake} , English Vocab: {vocab_size_eng}")
-
 
 
 training_dataset = my_data_set.batch_and_shuffle(batch_size=batch_size,buffer_size=buffer_size)
@@ -71,4 +70,9 @@ tester2= StandardTransformerGenerator(input_str="this morning the bird went to h
                                      ,context_sequencer=my_data_set.context_sequencer, content_sequencer=my_data_set.content_sequencer)
 output_callback2 = OutputTextCallback(tester2, project_directory, model_name)
 
-trans_inst.fit(training_dataset, epochs=epoch_count, callbacks=[my_csv_callback, my_checkpoint_callback, output_callback, output_callback2])
+
+tester3= StandardTransformerGenerator(input_str="Last year I went on holiday to another country for one week. It was very relaxing and I would like to go back", source_model=trans_inst, output_len=sequence_length
+                                     ,context_sequencer=my_data_set.context_sequencer, content_sequencer=my_data_set.content_sequencer)
+output_callback3 = OutputTextCallback(tester3, project_directory, model_name)
+
+trans_inst.fit(training_dataset, epochs=epoch_count, callbacks=[my_csv_callback, my_checkpoint_callback, output_callback3, output_callback2, output_callback])
