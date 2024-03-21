@@ -6,8 +6,10 @@ from src.data.TextToToken.TextToToken import TextToToken
 
 class TransformerTextDataObject:
     def __init__(self, context_sequencer: TextToToken, content_sequencer: TextToToken
-                 , context_len: int, content_len: int, data_loader: typing.Callable[[typing.Any], list],**kwargs):
+                 , context_len: int, content_len: int, data_loader: typing.Callable[[typing.Any], list]
+                 , validation_prop = 0,**kwargs):
         #Raw data and sequencing
+        self.validation_prop = validation_prop
         self.context_sequencer = context_sequencer
         self.content_sequencer = content_sequencer
         self.context_len = context_len
