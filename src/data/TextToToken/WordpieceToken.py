@@ -27,6 +27,6 @@ class WordpieceToken(TextToToken):
     def detokenise(self, input: list) -> list:
         detoken = self.wp_token.detokenize(input)
         interm = detoken.numpy()
-        interm = [f"{x}" for x in interm]
+        interm = [x.decode('utf-8') for x in interm]
         return interm
     
