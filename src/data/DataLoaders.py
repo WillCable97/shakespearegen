@@ -70,7 +70,7 @@ def read_text_with_sequences(file_path: str, sequence_len: int, len_type = "char
 
     if len_type == "word":
         all_lines = all_lines.replace("\n", " ")
-        all_lines = all_lines.replace("-", " ")
+        #all_lines = all_lines.replace("-", " ")
         all_lines = all_lines.split(' ')
         section_seperator  = ' '
 
