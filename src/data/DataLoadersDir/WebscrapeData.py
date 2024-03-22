@@ -30,6 +30,32 @@ def base_webscrape_with_ends(data_path: str):
     
     return all_eng_text, all_og_tex
 
+def overlap_with_ends(data_path: str):
+    all_eng_text, all_og_tex = base_webscrape(data_path)
+
+    updated_eng = []
+    updated_og = []
+
+    #print(all_eng_text[0])
+
+    for i in range(len(all_eng_text) - 3):
+        full_str_eng = ' '.join(all_eng_text[i:i+3])
+        full_str_og = ' '.join(all_og_tex[i:i+3])
+
+        updated_eng.append(f"* {full_str_eng} *")
+        updated_og.append(f"* {full_str_og} *")
+
+
+        #file = open("./1.txt", 'w+')
+        #file.writelines(updated_eng)
+
+        #file = open("./2.txt", 'w+')
+        #file.writelines(updated_eng)
+
+
+    return updated_eng, updated_og
+
+
 
 def training_set(input_datafetcher, data_path:str, training_proportion: float):
     eng, shak = input_datafetcher(data_path)
