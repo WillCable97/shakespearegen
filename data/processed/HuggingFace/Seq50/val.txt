@@ -1,0 +1,2143 @@
+?
+
+GREMIO:
+Good morrow, neighbour Baptista.
+
+BAPTI[SEQ_SPLITTER]STA:
+Good morrow, neighbour Gremio.
+God save you, [SEQ_SPLITTER]gentlemen!
+
+PETRUCHIO:
+And you, good sir! Pray, ha[SEQ_SPLITTER]ve you not a daughter
+Call'd Katharina, fair and v[SEQ_SPLITTER]irtuous?
+
+BAPTISTA:
+I have a daughter, sir, called[SEQ_SPLITTER] Katharina.
+
+GREMIO:
+You are too blunt: go to it o[SEQ_SPLITTER]rderly.
+
+PETRUCHIO:
+You wrong me, Signior Gremio: [SEQ_SPLITTER]give me leave.
+I am a gentleman of Verona, sir,
+Th[SEQ_SPLITTER]at, hearing of her beauty and her wit,
+Her affabil[SEQ_SPLITTER]ity and bashful modesty,
+Her wondrous qualities an[SEQ_SPLITTER]d mild behavior,
+Am bold to show myself a forward [SEQ_SPLITTER]guest
+Within your house, to make mine eye the witn[SEQ_SPLITTER]ess
+Of that report which I so oft have heard.
+And,[SEQ_SPLITTER] for an entrance to my entertainment,
+I do present[SEQ_SPLITTER] you with a man of mine,
+Cunning in music and the [SEQ_SPLITTER]mathematics,
+To instruct her fully in those scienc[SEQ_SPLITTER]es,
+Whereof I know she is not ignorant:
+Accept of [SEQ_SPLITTER]him, or else you do me wrong:
+His name is Licio, b[SEQ_SPLITTER]orn in Mantua.
+
+BAPTISTA:
+You're welcome, sir; and[SEQ_SPLITTER] he, for your good sake.
+But for my daughter Katha[SEQ_SPLITTER]rina, this I know,
+She is not for your turn, the m[SEQ_SPLITTER]ore my grief.
+
+PETRUCHIO:
+I see you do not mean to[SEQ_SPLITTER] part with her,
+Or else you like not of my company[SEQ_SPLITTER].
+
+BAPTISTA:
+Mistake me not; I speak but as I find[SEQ_SPLITTER].
+Whence are you, sir? what may I call your name?
+[SEQ_SPLITTER]
+PETRUCHIO:
+Petruchio is my name; Antonio's son,
+A[SEQ_SPLITTER] man well known throughout all Italy.
+
+BAPTISTA:
+I[SEQ_SPLITTER] know him well: you are welcome for his sake.
+
+GRE[SEQ_SPLITTER]MIO:
+Saving your tale, Petruchio, I pray,
+Let us, [SEQ_SPLITTER]that are poor petitioners, speak too:
+Baccare! you[SEQ_SPLITTER] are marvellous forward.
+
+PETRUCHIO:
+O, pardon me,[SEQ_SPLITTER] Signior Gremio; I would fain be doing.
+
+GREMIO:
+I[SEQ_SPLITTER] doubt it not, sir; but you will curse your
+wooing[SEQ_SPLITTER]. Neighbour, this is a gift very grateful, I am
+su[SEQ_SPLITTER]re of it. To express the like kindness, myself,
+th[SEQ_SPLITTER]at have been more kindly beholding to you than
+any[SEQ_SPLITTER], freely give unto you this young scholar,
+that ha[SEQ_SPLITTER]th been long studying at Rheims; as cunning
+in Gre[SEQ_SPLITTER]ek, Latin, and other languages, as the other
+in mu[SEQ_SPLITTER]sic and mathematics: his name is Cambio; pray,
+acc[SEQ_SPLITTER]ept his service.
+
+BAPTISTA:
+A thousand thanks, Sig[SEQ_SPLITTER]nior Gremio.
+Welcome, good Cambio.
+But, gentle sir[SEQ_SPLITTER], methinks you walk like a stranger:
+may I be so b[SEQ_SPLITTER]old to know the cause of your coming?
+
+TRANIO:
+Par[SEQ_SPLITTER]don me, sir, the boldness is mine own,
+That, being[SEQ_SPLITTER] a stranger in this city here,
+Do make myself a su[SEQ_SPLITTER]itor to your daughter,
+Unto Bianca, fair and virtu[SEQ_SPLITTER]ous.
+Nor is your firm resolve unknown to me,
+In th[SEQ_SPLITTER]e preferment of the eldest sister.
+This liberty is[SEQ_SPLITTER] all that I request,
+That, upon knowledge of my pa[SEQ_SPLITTER]rentage,
+I may have welcome 'mongst the rest that [SEQ_SPLITTER]woo
+And free access and favour as the rest:
+And, t[SEQ_SPLITTER]oward the education of your daughters,
+I here best[SEQ_SPLITTER]ow a simple instrument,
+And this small packet of G[SEQ_SPLITTER]reek and Latin books:
+If you accept them, then the[SEQ_SPLITTER]ir worth is great.
+
+BAPTISTA:
+Lucentio is your nam[SEQ_SPLITTER]e; of whence, I pray?
+
+TRANIO:
+Of Pisa, sir; son t[SEQ_SPLITTER]o Vincentio.
+
+BAPTISTA:
+A mighty man of Pisa; by r[SEQ_SPLITTER]eport
+I know him well: you are very welcome, sir,
+[SEQ_SPLITTER]Take you the lute, and you the set of books;
+You s[SEQ_SPLITTER]hall go see your pupils presently.
+Holla, within!
+[SEQ_SPLITTER]Sirrah, lead these gentlemen
+To my daughters; and [SEQ_SPLITTER]tell them both,
+These are their tutors: bid them u[SEQ_SPLITTER]se them well.
+We will go walk a little in the orch[SEQ_SPLITTER]ard,
+And then to dinner. You are passing welcome,
+[SEQ_SPLITTER]And so I pray you all to think yourselves.
+
+PETRUC[SEQ_SPLITTER]HIO:
+Signior Baptista, my business asketh haste,
+A[SEQ_SPLITTER]nd every day I cannot come to woo.
+You knew my fat[SEQ_SPLITTER]her well, and in him me,
+Left solely heir to all h[SEQ_SPLITTER]is lands and goods,
+Which I have better'd rather t[SEQ_SPLITTER]han decreased:
+Then tell me, if I get your daughte[SEQ_SPLITTER]r's love,
+What dowry shall I have with her to wife[SEQ_SPLITTER]?
+
+BAPTISTA:
+After my death the one half of my lan[SEQ_SPLITTER]ds,
+And in possession twenty thousand crowns.
+
+PET[SEQ_SPLITTER]RUCHIO:
+And, for that dowry, I'll assure her of
+He[SEQ_SPLITTER]r widowhood, be it that she survive me,
+In all my [SEQ_SPLITTER]lands and leases whatsoever:
+Let specialties be th[SEQ_SPLITTER]erefore drawn between us,
+That covenants may be ke[SEQ_SPLITTER]pt on either hand.
+
+BAPTISTA:
+Ay, when the special[SEQ_SPLITTER] thing is well obtain'd,
+That is, her love; for th[SEQ_SPLITTER]at is all in all.
+
+PETRUCHIO:
+Why, that is nothing[SEQ_SPLITTER]: for I tell you, father,
+I am as peremptory as sh[SEQ_SPLITTER]e proud-minded;
+And where two raging fires meet to[SEQ_SPLITTER]gether
+They do consume the thing that feeds their [SEQ_SPLITTER]fury:
+Though little fire grows great with little w[SEQ_SPLITTER]ind,
+Yet extreme gusts will blow out fire and all:[SEQ_SPLITTER]
+So I to her and so she yields to me;
+For I am rou[SEQ_SPLITTER]gh and woo not like a babe.
+
+BAPTISTA:
+Well mayst [SEQ_SPLITTER]thou woo, and happy be thy speed!
+But be thou arm'[SEQ_SPLITTER]d for some unhappy words.
+
+PETRUCHIO:
+Ay, to the p[SEQ_SPLITTER]roof; as mountains are for winds,
+That shake not, [SEQ_SPLITTER]though they blow perpetually.
+
+BAPTISTA:
+How now, [SEQ_SPLITTER]my friend! why dost thou look so pale?
+
+HORTENSIO:[SEQ_SPLITTER]
+For fear, I promise you, if I look pale.
+
+BAPTIST[SEQ_SPLITTER]A:
+What, will my daughter prove a good musician?
+
+[SEQ_SPLITTER]HORTENSIO:
+I think she'll sooner prove a soldier
+I[SEQ_SPLITTER]ron may hold with her, but never lutes.
+
+BAPTISTA:[SEQ_SPLITTER]
+Why, then thou canst not break her to the lute?
+
+[SEQ_SPLITTER]HORTENSIO:
+Why, no; for she hath broke the lute to[SEQ_SPLITTER] me.
+I did but tell her she mistook her frets,
+And[SEQ_SPLITTER] bow'd her hand to teach her fingering;
+When, with[SEQ_SPLITTER] a most impatient devilish spirit,
+'Frets, call yo[SEQ_SPLITTER]u these?' quoth she; 'I'll fume
+with them:'
+And, w[SEQ_SPLITTER]ith that word, she struck me on the head,
+And thro[SEQ_SPLITTER]ugh the instrument my pate made way;
+And there I s[SEQ_SPLITTER]tood amazed for a while,
+As on a pillory, looking [SEQ_SPLITTER]through the lute;
+While she did call me rascal fid[SEQ_SPLITTER]dler
+And twangling Jack; with twenty such vile ter[SEQ_SPLITTER]ms,
+As had she studied to misuse me so.
+
+PETRUCHIO[SEQ_SPLITTER]:
+Now, by the world, it is a lusty wench;
+I love h[SEQ_SPLITTER]er ten times more than e'er I did:
+O, how I long t[SEQ_SPLITTER]o have some chat with her!
+
+BAPTISTA:
+Well, go wit[SEQ_SPLITTER]h me and be not so discomfited:
+Proceed in practis[SEQ_SPLITTER]e with my younger daughter;
+She's apt to learn and[SEQ_SPLITTER] thankful for good turns.
+Signior Petruchio, will [SEQ_SPLITTER]you go with us,
+Or shall I send my daughter Kate t[SEQ_SPLITTER]o you?
+
+PETRUCHIO:
+I pray you do.
+I will attend he[SEQ_SPLITTER]r here,
+And woo her with some spirit when she come[SEQ_SPLITTER]s.
+Say that she rail; why then I'll tell her plain[SEQ_SPLITTER]
+She sings as sweetly as a nightingale:
+Say that s[SEQ_SPLITTER]he frown, I'll say she looks as clear
+As morning r[SEQ_SPLITTER]oses newly wash'd with dew:
+Say she be mute and wi[SEQ_SPLITTER]ll not speak a word;
+Then I'll commend her volubil[SEQ_SPLITTER]ity,
+And say she uttereth piercing eloquence:
+If s[SEQ_SPLITTER]he do bid me pack, I'll give her thanks,
+As though[SEQ_SPLITTER] she bid me stay by her a week:
+If she deny to wed[SEQ_SPLITTER], I'll crave the day
+When I shall ask the banns an[SEQ_SPLITTER]d when be married.
+But here she comes; and now, Pe[SEQ_SPLITTER]truchio, speak.
+Good morrow, Kate; for that's your[SEQ_SPLITTER] name, I hear.
+
+KATHARINA:
+Well have you heard, bu[SEQ_SPLITTER]t something hard of hearing:
+They call me Katharin[SEQ_SPLITTER]a that do talk of me.
+
+PETRUCHIO:
+You lie, in fait[SEQ_SPLITTER]h; for you are call'd plain Kate,
+And bonny Kate a[SEQ_SPLITTER]nd sometimes Kate the curst;
+But Kate, the prettie[SEQ_SPLITTER]st Kate in Christendom
+Kate of Kate Hall, my super[SEQ_SPLITTER]-dainty Kate,
+For dainties are all Kates, and ther[SEQ_SPLITTER]efore, Kate,
+Take this of me, Kate of my consolati[SEQ_SPLITTER]on;
+Hearing thy mildness praised in every town,
+Th[SEQ_SPLITTER]y virtues spoke of, and thy beauty sounded,
+Yet no[SEQ_SPLITTER]t so deeply as to thee belongs,
+Myself am moved to[SEQ_SPLITTER] woo thee for my wife.
+
+KATHARINA:
+Moved! in good [SEQ_SPLITTER]time: let him that moved you hither
+Remove you hen[SEQ_SPLITTER]ce: I knew you at the first
+You were a moveable.
+
+[SEQ_SPLITTER]PETRUCHIO:
+Why, what's a moveable?
+
+KATHARINA:
+A j[SEQ_SPLITTER]oin'd-stool.
+
+PETRUCHIO:
+Thou hast hit it: come, s[SEQ_SPLITTER]it on me.
+
+KATHARINA:
+Asses are made to bear, and [SEQ_SPLITTER]so are you.
+
+PETRUCHIO:
+Women are made to bear, an[SEQ_SPLITTER]d so are you.
+
+KATHARINA:
+No such jade as you, if [SEQ_SPLITTER]me you mean.
+
+PETRUCHIO:
+Alas! good Kate, I will n[SEQ_SPLITTER]ot burden thee;
+For, knowing thee to be but young [SEQ_SPLITTER]and light--
+
+KATHARINA:
+Too light for such a swain[SEQ_SPLITTER] as you to catch;
+And yet as heavy as my weight sh[SEQ_SPLITTER]ould be.
+
+PETRUCHIO:
+Should be! should--buzz!
+
+KAT[SEQ_SPLITTER]HARINA:
+Well ta'en, and like a buzzard.
+
+PETRUCHIO[SEQ_SPLITTER]:
+O slow-wing'd turtle! shall a buzzard take thee?[SEQ_SPLITTER]
+
+KATHARINA:
+Ay, for a turtle, as he takes a buzza[SEQ_SPLITTER]rd.
+
+PETRUCHIO:
+Come, come, you wasp; i' faith, yo[SEQ_SPLITTER]u are too angry.
+
+KATHARINA:
+If I be waspish, best[SEQ_SPLITTER] beware my sting.
+
+PETRUCHIO:
+My remedy is then, t[SEQ_SPLITTER]o pluck it out.
+
+KATHARINA:
+Ay, if the fool could [SEQ_SPLITTER]find it where it lies,
+
+PETRUCHIO:
+Who knows not w[SEQ_SPLITTER]here a wasp does
+wear his sting? In his tail.
+
+KAT[SEQ_SPLITTER]HARINA:
+In his tongue.
+
+PETRUCHIO:
+Whose tongue?
+
+[SEQ_SPLITTER]KATHARINA:
+Yours, if you talk of tails: and so far[SEQ_SPLITTER]ewell.
+
+PETRUCHIO:
+What, with my tongue in your ta[SEQ_SPLITTER]il? nay, come again,
+Good Kate; I am a gentleman.
+[SEQ_SPLITTER]
+KATHARINA:
+That I'll try.
+
+PETRUCHIO:
+I swear I'l[SEQ_SPLITTER]l cuff you, if you strike again.
+
+KATHARINA:
+So ma[SEQ_SPLITTER]y you lose your arms:
+If you strike me, you are no[SEQ_SPLITTER] gentleman;
+And if no gentleman, why then no arms.[SEQ_SPLITTER]
+
+PETRUCHIO:
+A herald, Kate? O, put me in thy book[SEQ_SPLITTER]s!
+
+KATHARINA:
+What is your crest? a coxcomb?
+
+PET[SEQ_SPLITTER]RUCHIO:
+A combless cock, so Kate will be my hen.
+
+[SEQ_SPLITTER]KATHARINA:
+No cock of mine; you crow too like a cr[SEQ_SPLITTER]aven.
+
+PETRUCHIO:
+Nay, come, Kate, come; you must [SEQ_SPLITTER]not look so sour.
+
+KATHARINA:
+It is my fashion, wh[SEQ_SPLITTER]en I see a crab.
+
+PETRUCHIO:
+Why, here's no crab; [SEQ_SPLITTER]and therefore look not sour.
+
+KATHARINA:
+There is,[SEQ_SPLITTER] there is.
+
+PETRUCHIO:
+Then show it me.
+
+KATHARINA[SEQ_SPLITTER]:
+Had I a glass, I would.
+
+PETRUCHIO:
+What, you me[SEQ_SPLITTER]an my face?
+
+KATHARINA:
+Well aim'd of such a young[SEQ_SPLITTER] one.
+
+PETRUCHIO:
+Now, by Saint George, I am too y[SEQ_SPLITTER]oung for you.
+
+KATHARINA:
+Yet you are wither'd.
+
+P[SEQ_SPLITTER]ETRUCHIO:
+'Tis with cares.
+
+KATHARINA:
+I care not.[SEQ_SPLITTER]
+
+PETRUCHIO:
+Nay, hear you, Kate: in sooth you sca[SEQ_SPLITTER]pe not so.
+
+KATHARINA:
+I chafe you, if I tarry: le[SEQ_SPLITTER]t me go.
+
+PETRUCHIO:
+No, not a whit: I find you pa[SEQ_SPLITTER]ssing gentle.
+'Twas told me you were rough and coy[SEQ_SPLITTER] and sullen,
+And now I find report a very liar;
+Fo[SEQ_SPLITTER]r thou are pleasant, gamesome, passing courteous,
+[SEQ_SPLITTER]But slow in speech, yet sweet as spring-time flowe[SEQ_SPLITTER]rs:
+Thou canst not frown, thou canst not look aska[SEQ_SPLITTER]nce,
+Nor bite the lip, as angry wenches will,
+Nor [SEQ_SPLITTER]hast thou pleasure to be cross in talk,
+But thou w[SEQ_SPLITTER]ith mildness entertain'st thy wooers,
+With gentle [SEQ_SPLITTER]conference, soft and affable.
+Why does the world r[SEQ_SPLITTER]eport that Kate doth limp?
+O slanderous world! Kat[SEQ_SPLITTER]e like the hazel-twig
+Is straight and slender and [SEQ_SPLITTER]as brown in hue
+As hazel nuts and sweeter than the[SEQ_SPLITTER] kernels.
+O, let me see thee walk: thou dost not h[SEQ_SPLITTER]alt.
+
+KATHARINA:
+Go, fool, and whom thou keep'st c[SEQ_SPLITTER]ommand.
+
+PETRUCHIO:
+Did ever Dian so become a grov[SEQ_SPLITTER]e
+As Kate this chamber with her princely gait?
+O, [SEQ_SPLITTER]be thou Dian, and let her be Kate;
+And then let Ka[SEQ_SPLITTER]te be chaste and Dian sportful!
+
+KATHARINA:
+Where [SEQ_SPLITTER]did you study all this goodly speech?
+
+PETRUCHIO:
+[SEQ_SPLITTER]It is extempore, from my mother-wit.
+
+KATHARINA:
+A[SEQ_SPLITTER] witty mother! witless else her son.
+
+PETRUCHIO:
+A[SEQ_SPLITTER]m I not wise?
+
+KATHARINA:
+Yes; keep you warm.
+
+PET[SEQ_SPLITTER]RUCHIO:
+Marry, so I mean, sweet Katharina, in thy [SEQ_SPLITTER]bed:
+And therefore, setting all this chat aside,
+T[SEQ_SPLITTER]hus in plain terms: your father hath consented
+Tha[SEQ_SPLITTER]t you shall be my wife; your dowry 'greed on;
+And,[SEQ_SPLITTER] Will you, nill you, I will marry you.
+Now, Kate, [SEQ_SPLITTER]I am a husband for your turn;
+For, by this light, [SEQ_SPLITTER]whereby I see thy beauty,
+Thy beauty, that doth ma[SEQ_SPLITTER]ke me like thee well,
+Thou must be married to no m[SEQ_SPLITTER]an but me;
+For I am he am born to tame you Kate,
+A[SEQ_SPLITTER]nd bring you from a wild Kate to a Kate
+Conformabl[SEQ_SPLITTER]e as other household Kates.
+Here comes your father[SEQ_SPLITTER]: never make denial;
+I must and will have Katharin[SEQ_SPLITTER]a to my wife.
+
+BAPTISTA:
+Now, Signior Petruchio, h[SEQ_SPLITTER]ow speed you with my daughter?
+
+PETRUCHIO:
+How but[SEQ_SPLITTER] well, sir? how but well?
+It were impossible I sho[SEQ_SPLITTER]uld speed amiss.
+
+BAPTISTA:
+Why, how now, daughter[SEQ_SPLITTER] Katharina! in your dumps?
+
+KATHARINA:
+Call you me[SEQ_SPLITTER] daughter? now, I promise you
+You have show'd a te[SEQ_SPLITTER]nder fatherly regard,
+To wish me wed to one half l[SEQ_SPLITTER]unatic;
+A mad-cup ruffian and a swearing Jack,
+Tha[SEQ_SPLITTER]t thinks with oaths to face the matter out.
+
+PETRU[SEQ_SPLITTER]CHIO:
+Father, 'tis thus: yourself and all the worl[SEQ_SPLITTER]d,
+That talk'd of her, have talk'd amiss of her:
+I[SEQ_SPLITTER]f she be curst, it is for policy,
+For she's not fr[SEQ_SPLITTER]oward, but modest as the dove;
+She is not hot, but[SEQ_SPLITTER] temperate as the morn;
+For patience she will prov[SEQ_SPLITTER]e a second Grissel,
+And Roman Lucrece for her chas[SEQ_SPLITTER]tity:
+And to conclude, we have 'greed so well toge[SEQ_SPLITTER]ther,
+That upon Sunday is the wedding-day.
+
+KATHAR[SEQ_SPLITTER]INA:
+I'll see thee hang'd on Sunday first.
+
+GREMIO[SEQ_SPLITTER]:
+Hark, Petruchio; she says she'll see thee
+hang'd[SEQ_SPLITTER] first.
+
+TRANIO:
+Is this your speeding? nay, then,[SEQ_SPLITTER] good night our part!
+
+PETRUCHIO:
+Be patient, gent[SEQ_SPLITTER]lemen; I choose her for myself:
+If she and I be pl[SEQ_SPLITTER]eased, what's that to you?
+'Tis bargain'd 'twixt u[SEQ_SPLITTER]s twain, being alone,
+That she shall still be curs[SEQ_SPLITTER]t in company.
+I tell you, 'tis incredible to belie[SEQ_SPLITTER]ve
+How much she loves me: O, the kindest Kate!
+She[SEQ_SPLITTER] hung about my neck; and kiss on kiss
+She vied so [SEQ_SPLITTER]fast, protesting oath on oath,
+That in a twink she[SEQ_SPLITTER] won me to her love.
+O, you are novices! 'tis a wo[SEQ_SPLITTER]rld to see,
+How tame, when men and women are alone[SEQ_SPLITTER],
+A meacock wretch can make the curstest shrew.
+Gi[SEQ_SPLITTER]ve me thy hand, Kate: I will unto Venice,
+To buy a[SEQ_SPLITTER]pparel 'gainst the wedding-day.
+Provide the feast,[SEQ_SPLITTER] father, and bid the guests;
+I will be sure my Kat[SEQ_SPLITTER]harina shall be fine.
+
+BAPTISTA:
+I know not what t[SEQ_SPLITTER]o say: but give me your hands;
+God send you joy, P[SEQ_SPLITTER]etruchio! 'tis a match.
+
+GREMIO:
+Amen, say we: we [SEQ_SPLITTER]will be witnesses.
+
+PETRUCHIO:
+Father, and wife, a[SEQ_SPLITTER]nd gentlemen, adieu;
+I will to Venice; Sunday come[SEQ_SPLITTER]s apace:
+We will have rings and things and fine ar[SEQ_SPLITTER]ray;
+And kiss me, Kate, we will be married o'Sunda[SEQ_SPLITTER]y.
+
+GREMIO:
+Was ever match clapp'd up so suddenly?[SEQ_SPLITTER]
+
+BAPTISTA:
+Faith, gentlemen, now I play a merchan[SEQ_SPLITTER]t's part,
+And venture madly on a desperate mart.
+
+[SEQ_SPLITTER]TRANIO:
+'Twas a commodity lay fretting by you:
+'Tw[SEQ_SPLITTER]ill bring you gain, or perish on the seas.
+
+BAPTIS[SEQ_SPLITTER]TA:
+The gain I seek is, quiet in the match.
+
+GREMI[SEQ_SPLITTER]O:
+No doubt but he hath got a quiet catch.
+But now[SEQ_SPLITTER], Baptists, to your younger daughter:
+Now is the d[SEQ_SPLITTER]ay we long have looked for:
+I am your neighbour, a[SEQ_SPLITTER]nd was suitor first.
+
+TRANIO:
+And I am one that lo[SEQ_SPLITTER]ve Bianca more
+Than words can witness, or your tho[SEQ_SPLITTER]ughts can guess.
+
+GREMIO:
+Youngling, thou canst no[SEQ_SPLITTER]t love so dear as I.
+
+TRANIO:
+Graybeard, thy love [SEQ_SPLITTER]doth freeze.
+
+GREMIO:
+But thine doth fry.
+Skipper,[SEQ_SPLITTER] stand back: 'tis age that nourisheth.
+
+TRANIO:
+Bu[SEQ_SPLITTER]t youth in ladies' eyes that flourisheth.
+
+BAPTIST[SEQ_SPLITTER]A:
+Content you, gentlemen: I will compound this st[SEQ_SPLITTER]rife:
+'Tis deeds must win the prize; and he of bot[SEQ_SPLITTER]h
+That can assure my daughter greatest dower
+Shall[SEQ_SPLITTER] have my Bianca's love.
+Say, Signior Gremio, What [SEQ_SPLITTER]can you assure her?
+
+GREMIO:
+First, as you know, m[SEQ_SPLITTER]y house within the city
+Is richly furnished with p[SEQ_SPLITTER]late and gold;
+Basins and ewers to lave her dainty[SEQ_SPLITTER] hands;
+My hangings all of Tyrian tapestry;
+In ivo[SEQ_SPLITTER]ry coffers I have stuff'd my crowns;
+In cypress ch[SEQ_SPLITTER]ests my arras counterpoints,
+Costly apparel, tents[SEQ_SPLITTER], and canopies,
+Fine linen, Turkey cushions boss'd[SEQ_SPLITTER] with pearl,
+Valance of Venice gold in needlework,[SEQ_SPLITTER]
+Pewter and brass and all things that belong
+To ho[SEQ_SPLITTER]use or housekeeping: then, at my farm
+I have a hun[SEQ_SPLITTER]dred milch-kine to the pail,
+Sixscore fat oxen sta[SEQ_SPLITTER]nding in my stalls,
+And all things answerable to t[SEQ_SPLITTER]his portion.
+Myself am struck in years, I must con[SEQ_SPLITTER]fess;
+And if I die to-morrow, this is hers,
+If whi[SEQ_SPLITTER]lst I live she will be only mine.
+
+TRANIO:
+That 'o[SEQ_SPLITTER]nly' came well in. Sir, list to me:
+I am my father[SEQ_SPLITTER]'s heir and only son:
+If I may have your daughter [SEQ_SPLITTER]to my wife,
+I'll leave her houses three or four as[SEQ_SPLITTER] good,
+Within rich Pisa walls, as any one
+Old Sign[SEQ_SPLITTER]ior Gremio has in Padua;
+Besides two thousand duca[SEQ_SPLITTER]ts by the year
+Of fruitful land, all which shall b[SEQ_SPLITTER]e her jointure.
+What, have I pinch'd you, Signior [SEQ_SPLITTER]Gremio?
+
+GREMIO:
+Two thousand ducats by the year o[SEQ_SPLITTER]f land!
+My land amounts not to so much in all:
+Tha[SEQ_SPLITTER]t she shall have; besides an argosy
+That now is ly[SEQ_SPLITTER]ing in Marseilles' road.
+What, have I choked you w[SEQ_SPLITTER]ith an argosy?
+
+TRANIO:
+Gremio, 'tis known my fath[SEQ_SPLITTER]er hath no less
+Than three great argosies; besides[SEQ_SPLITTER] two galliases,
+And twelve tight galleys: these I [SEQ_SPLITTER]will assure her,
+And twice as much, whate'er thou [SEQ_SPLITTER]offer'st next.
+
+GREMIO:
+Nay, I have offer'd all, I[SEQ_SPLITTER] have no more;
+And she can have no more than all I[SEQ_SPLITTER] have:
+If you like me, she shall have me and mine.[SEQ_SPLITTER]
+
+TRANIO:
+Why, then the maid is mine from all the [SEQ_SPLITTER]world,
+By your firm promise: Gremio is out-vied.
+
+[SEQ_SPLITTER]BAPTISTA:
+I must confess your offer is the best;
+A[SEQ_SPLITTER]nd, let your father make her the assurance,
+She is[SEQ_SPLITTER] your own; else, you must pardon me,
+if you should[SEQ_SPLITTER] die before him, where's her dower?
+
+TRANIO:
+That'[SEQ_SPLITTER]s but a cavil: he is old, I young.
+
+GREMIO:
+And ma[SEQ_SPLITTER]y not young men die, as well as old?
+
+BAPTISTA:
+We[SEQ_SPLITTER]ll, gentlemen,
+I am thus resolved: on Sunday next [SEQ_SPLITTER]you know
+My daughter Katharina is to be married:
+N[SEQ_SPLITTER]ow, on the Sunday following, shall Bianca
+Be bride[SEQ_SPLITTER] to you, if you this assurance;
+If not, Signior Gr[SEQ_SPLITTER]emio:
+And so, I take my leave, and thank you both.[SEQ_SPLITTER]
+
+GREMIO:
+Adieu, good neighbour.
+Now I fear thee n[SEQ_SPLITTER]ot:
+Sirrah young gamester, your father were a fool[SEQ_SPLITTER]
+To give thee all, and in his waning age
+Set foot [SEQ_SPLITTER]under thy table: tut, a toy!
+An old Italian fox is[SEQ_SPLITTER] not so kind, my boy.
+
+TRANIO:
+A vengeance on your[SEQ_SPLITTER] crafty wither'd hide!
+Yet I have faced it with a [SEQ_SPLITTER]card of ten.
+'Tis in my head to do my master good:[SEQ_SPLITTER]
+I see no reason but supposed Lucentio
+Must get a [SEQ_SPLITTER]father, call'd 'supposed Vincentio;'
+And that's a [SEQ_SPLITTER]wonder: fathers commonly
+Do get their children; bu[SEQ_SPLITTER]t in this case of wooing,
+A child shall get a sire[SEQ_SPLITTER], if I fail not of my cunning.
+
+LUCENTIO:
+Fiddler,[SEQ_SPLITTER] forbear; you grow too forward, sir:
+Have you so s[SEQ_SPLITTER]oon forgot the entertainment
+Her sister Katharina [SEQ_SPLITTER]welcomed you withal?
+
+HORTENSIO:
+But, wrangling pe[SEQ_SPLITTER]dant, this is
+The patroness of heavenly harmony:
+T[SEQ_SPLITTER]hen give me leave to have prerogative;
+And when in[SEQ_SPLITTER] music we have spent an hour,
+Your lecture shall h[SEQ_SPLITTER]ave leisure for as much.
+
+LUCENTIO:
+Preposterous a[SEQ_SPLITTER]ss, that never read so far
+To know the cause why m[SEQ_SPLITTER]usic was ordain'd!
+Was it not to refresh the mind [SEQ_SPLITTER]of man
+After his studies or his usual pain?
+Then g[SEQ_SPLITTER]ive me leave to read philosophy,
+And while I pause[SEQ_SPLITTER], serve in your harmony.
+
+HORTENSIO:
+Sirrah, I wil[SEQ_SPLITTER]l not bear these braves of thine.
+
+BIANCA:
+Why, ge[SEQ_SPLITTER]ntlemen, you do me double wrong,
+To strive for tha[SEQ_SPLITTER]t which resteth in my choice:
+I am no breeching sc[SEQ_SPLITTER]holar in the schools;
+I'll not be tied to hours no[SEQ_SPLITTER]r 'pointed times,
+But learn my lessons as I please[SEQ_SPLITTER] myself.
+And, to cut off all strife, here sit we d[SEQ_SPLITTER]own:
+Take you your instrument, play you the whiles[SEQ_SPLITTER];
+His lecture will be done ere you have tuned.
+
+HO[SEQ_SPLITTER]RTENSIO:
+You'll leave his lecture when I am in tun[SEQ_SPLITTER]e?
+
+LUCENTIO:
+That will be never: tune your instru[SEQ_SPLITTER]ment.
+
+BIANCA:
+Where left we last?
+
+LUCENTIO:
+Here[SEQ_SPLITTER], madam:
+'Hic ibat Simois; hic est Sigeia tellus;
+[SEQ_SPLITTER]Hic steterat Priami regia celsa senis.'
+
+BIANCA:
+C[SEQ_SPLITTER]onstrue them.
+
+LUCENTIO:
+'Hic ibat,' as I told you[SEQ_SPLITTER] before, 'Simois,' I am
+Lucentio, 'hic est,' son u[SEQ_SPLITTER]nto Vincentio of Pisa,
+'Sigeia tellus,' disguised [SEQ_SPLITTER]thus to get your love;
+'Hic steterat,' and that Lu[SEQ_SPLITTER]centio that comes
+a-wooing, 'Priami,' is my man Tr[SEQ_SPLITTER]anio, 'regia,'
+bearing my port, 'celsa senis,' tha[SEQ_SPLITTER]t we might
+beguile the old pantaloon.
+
+HORTENSIO:
+[SEQ_SPLITTER]Madam, my instrument's in tune.
+
+BIANCA:
+Let's hea[SEQ_SPLITTER]r. O fie! the treble jars.
+
+LUCENTIO:
+Spit in the [SEQ_SPLITTER]hole, man, and tune again.
+
+BIANCA:
+Now let me see[SEQ_SPLITTER] if I can construe it: 'Hic ibat
+Simois,' I know y[SEQ_SPLITTER]ou not, 'hic est Sigeia tellus,' I
+trust you not; [SEQ_SPLITTER]'Hic steterat Priami,' take heed
+he hear us not, '[SEQ_SPLITTER]regia,' presume not, 'celsa senis,'
+despair not.
+
+[SEQ_SPLITTER]HORTENSIO:
+Madam, 'tis now in tune.
+
+LUCENTIO:
+All[SEQ_SPLITTER] but the base.
+
+HORTENSIO:
+The base is right; 'tis[SEQ_SPLITTER] the base knave that jars.
+How fiery and forward o[SEQ_SPLITTER]ur pedant is!
+Now, for my life, the knave doth cou[SEQ_SPLITTER]rt my love:
+Pedascule, I'll watch you better yet.
+[SEQ_SPLITTER]
+BIANCA:
+In time I may believe, yet I mistrust.
+
+L[SEQ_SPLITTER]UCENTIO:
+Mistrust it not: for, sure, AEacides
+Was [SEQ_SPLITTER]Ajax, call'd so from his grandfather.
+
+BIANCA:
+I m[SEQ_SPLITTER]ust believe my master; else, I promise you,
+I shou[SEQ_SPLITTER]ld be arguing still upon that doubt:
+But let it re[SEQ_SPLITTER]st. Now, Licio, to you:
+Good masters, take it not [SEQ_SPLITTER]unkindly, pray,
+That I have been thus pleasant wit[SEQ_SPLITTER]h you both.
+
+HORTENSIO:
+You may go walk, and give [SEQ_SPLITTER]me leave a while:
+My lessons make no music in thre[SEQ_SPLITTER]e parts.
+
+LUCENTIO:
+Are you so formal, sir? well, [SEQ_SPLITTER]I must wait,
+And watch withal; for, but I be decei[SEQ_SPLITTER]ved,
+Our fine musician groweth amorous.
+
+HORTENSIO[SEQ_SPLITTER]:
+Madam, before you touch the instrument,
+To learn[SEQ_SPLITTER] the order of my fingering,
+I must begin with rudi[SEQ_SPLITTER]ments of art;
+To teach you gamut in a briefer sort[SEQ_SPLITTER],
+More pleasant, pithy and effectual,
+Than hath be[SEQ_SPLITTER]en taught by any of my trade:
+And there it is in w[SEQ_SPLITTER]riting, fairly drawn.
+
+BIANCA:
+Why, I am past my g[SEQ_SPLITTER]amut long ago.
+
+HORTENSIO:
+Yet read the gamut of H[SEQ_SPLITTER]ortensio.
+
+BIANCA:
+
+Servant:
+Mistress, your father[SEQ_SPLITTER] prays you leave your books
+And help to dress your[SEQ_SPLITTER] sister's chamber up:
+You know to-morrow is the we[SEQ_SPLITTER]dding-day.
+
+BIANCA:
+Farewell, sweet masters both; [SEQ_SPLITTER]I must be gone.
+
+LUCENTIO:
+Faith, mistress, then I[SEQ_SPLITTER] have no cause to stay.
+
+HORTENSIO:
+But I have cau[SEQ_SPLITTER]se to pry into this pedant:
+Methinks he looks as t[SEQ_SPLITTER]hough he were in love:
+Yet if thy thoughts, Bianca[SEQ_SPLITTER], be so humble
+To cast thy wandering eyes on every[SEQ_SPLITTER] stale,
+Seize thee that list: if once I find thee [SEQ_SPLITTER]ranging,
+Hortensio will be quit with thee by chang[SEQ_SPLITTER]ing.
+
+BAPTISTA:
+
+KATHARINA:
+No shame but mine: I m[SEQ_SPLITTER]ust, forsooth, be forced
+To give my hand opposed a[SEQ_SPLITTER]gainst my heart
+Unto a mad-brain rudesby full of s[SEQ_SPLITTER]pleen;
+Who woo'd in haste and means to wed at leis[SEQ_SPLITTER]ure.
+I told you, I, he was a frantic fool,
+Hiding [SEQ_SPLITTER]his bitter jests in blunt behavior:
+And, to be not[SEQ_SPLITTER]ed for a merry man,
+He'll woo a thousand, 'point t[SEQ_SPLITTER]he day of marriage,
+Make feasts, invite friends, a[SEQ_SPLITTER]nd proclaim the banns;
+Yet never means to wed wher[SEQ_SPLITTER]e he hath woo'd.
+Now must the world point at poor [SEQ_SPLITTER]Katharina,
+And say, 'Lo, there is mad Petruchio's [SEQ_SPLITTER]wife,
+If it would please him come and marry her!'
+[SEQ_SPLITTER]
+TRANIO:
+Patience, good Katharina, and Baptista to[SEQ_SPLITTER]o.
+Upon my life, Petruchio means but well,
+Whateve[SEQ_SPLITTER]r fortune stays him from his word:
+Though he be bl[SEQ_SPLITTER]unt, I know him passing wise;
+Though he be merry, [SEQ_SPLITTER]yet withal he's honest.
+
+KATHARINA:
+Would Katharin[SEQ_SPLITTER]a had never seen him though!
+
+BAPTISTA:
+Go, girl; [SEQ_SPLITTER]I cannot blame thee now to weep;
+For such an injur[SEQ_SPLITTER]y would vex a very saint,
+Much more a shrew of thy[SEQ_SPLITTER] impatient humour.
+
+BIONDELLO:
+Master, master! new[SEQ_SPLITTER]s, old news, and such news as
+you never heard of!
+[SEQ_SPLITTER]
+BAPTISTA:
+Is it new and old too? how may that be?[SEQ_SPLITTER]
+
+BIONDELLO:
+Why, is it not news, to hear of Petru[SEQ_SPLITTER]chio's coming?
+
+BAPTISTA:
+Is he come?
+
+BIONDELLO:
+[SEQ_SPLITTER]Why, no, sir.
+
+BAPTISTA:
+What then?
+
+BIONDELLO:
+He[SEQ_SPLITTER] is coming.
+
+BAPTISTA:
+When will he be here?
+
+BION[SEQ_SPLITTER]DELLO:
+When he stands where I am and sees you ther[SEQ_SPLITTER]e.
+
+TRANIO:
+But say, what to thine old news?
+
+BION[SEQ_SPLITTER]DELLO:
+Why, Petruchio is coming in a new hat and a[SEQ_SPLITTER]n old
+jerkin, a pair of old breeches thrice turned[SEQ_SPLITTER], a pair
+of boots that have been candle-cases, one[SEQ_SPLITTER] buckled,
+another laced, an old rusty sword ta'en [SEQ_SPLITTER]out of the
+town-armory, with a broken hilt, and ch[SEQ_SPLITTER]apeless;
+with two broken points: his horse hipped [SEQ_SPLITTER]with an
+old mothy saddle and stirrups of no kindre[SEQ_SPLITTER]d;
+besides, possessed with the glanders and like t[SEQ_SPLITTER]o mose
+in the chine; troubled with the lampass, in[SEQ_SPLITTER]fected
+with the fashions, full of wingdalls, sped [SEQ_SPLITTER]with
+spavins, rayed with yellows, past cure of the[SEQ_SPLITTER] fives,
+stark spoiled with the staggers, begnawn w[SEQ_SPLITTER]ith the
+bots, swayed in the back and shoulder-shot[SEQ_SPLITTER]ten;
+near-legged before and with, a half-chequed b[SEQ_SPLITTER]it
+and a head-stall of sheeps leather which, being[SEQ_SPLITTER]
+restrained to keep him from stumbling, hath been
+[SEQ_SPLITTER]often burst and now repaired with knots; one girth[SEQ_SPLITTER]
+six time pieced and a woman's crupper of velure,
+[SEQ_SPLITTER]which hath two letters for her name fairly set dow[SEQ_SPLITTER]n
+in studs, and here and there pieced with packthr[SEQ_SPLITTER]ead.
+
+BAPTISTA:
+Who comes with him?
+
+BIONDELLO:
+O,[SEQ_SPLITTER] sir, his lackey, for all the world caparisoned
+li[SEQ_SPLITTER]ke the horse; with a linen stock on one leg and a
+[SEQ_SPLITTER]kersey boot-hose on the other, gartered with a red[SEQ_SPLITTER]
+and blue list; an old hat and 'the humour of fort[SEQ_SPLITTER]y
+fancies' pricked in't for a feather: a monster, [SEQ_SPLITTER]a
+very monster in apparel, and not like a Christia[SEQ_SPLITTER]n
+footboy or a gentleman's lackey.
+
+TRANIO:
+'Tis s[SEQ_SPLITTER]ome odd humour pricks him to this fashion;
+Yet oft[SEQ_SPLITTER]entimes he goes but mean-apparell'd.
+
+BAPTISTA:
+I [SEQ_SPLITTER]am glad he's come, howsoe'er he comes.
+
+BIONDELLO:[SEQ_SPLITTER]
+Why, sir, he comes not.
+
+BAPTISTA:
+Didst thou not[SEQ_SPLITTER] say he comes?
+
+BIONDELLO:
+Who? that Petruchio cam[SEQ_SPLITTER]e?
+
+BAPTISTA:
+Ay, that Petruchio came.
+
+BIONDELLO:[SEQ_SPLITTER]
+No, sir, I say his horse comes, with him on his b[SEQ_SPLITTER]ack.
+
+BAPTISTA:
+Why, that's all one.
+
+BIONDELLO:
+N[SEQ_SPLITTER]ay, by Saint Jamy,
+I hold you a penny,
+A horse and[SEQ_SPLITTER] a man
+Is more than one,
+And yet not many.
+
+PETRUC[SEQ_SPLITTER]HIO:
+Come, where be these gallants? who's at home?[SEQ_SPLITTER]
+
+BAPTISTA:
+You are welcome, sir.
+
+PETRUCHIO:
+And [SEQ_SPLITTER]yet I come not well.
+
+BAPTISTA:
+And yet you halt n[SEQ_SPLITTER]ot.
+
+TRANIO:
+Not so well apparell'd
+As I wish you [SEQ_SPLITTER]were.
+
+PETRUCHIO:
+Were it better, I should rush in[SEQ_SPLITTER] thus.
+But where is Kate? where is my lovely bride[SEQ_SPLITTER]?
+How does my father? Gentles, methinks you frown:[SEQ_SPLITTER]
+And wherefore gaze this goodly company,
+As if the[SEQ_SPLITTER]y saw some wondrous monument,
+Some comet or unusua[SEQ_SPLITTER]l prodigy?
+
+BAPTISTA:
+Why, sir, you know this is y[SEQ_SPLITTER]our wedding-day:
+First were we sad, fearing you wo[SEQ_SPLITTER]uld not come;
+Now sadder, that you come so unprovi[SEQ_SPLITTER]ded.
+Fie, doff this habit, shame to your estate,
+A[SEQ_SPLITTER]n eye-sore to our solemn festival!
+
+TRANIO:
+And te[SEQ_SPLITTER]lls us, what occasion of import
+Hath all so long d[SEQ_SPLITTER]etain'd you from your wife,
+And sent you hither so[SEQ_SPLITTER] unlike yourself?
+
+PETRUCHIO:
+Tedious it were to t[SEQ_SPLITTER]ell, and harsh to hear:
+Sufficeth I am come to kee[SEQ_SPLITTER]p my word,
+Though in some part enforced to digress[SEQ_SPLITTER];
+Which, at more leisure, I will so excuse
+As you [SEQ_SPLITTER]shall well be satisfied withal.
+But where is Kate?[SEQ_SPLITTER] I stay too long from her:
+The morning wears, 'tis[SEQ_SPLITTER] time we were at church.
+
+TRANIO:
+See not your bri[SEQ_SPLITTER]de in these unreverent robes:
+Go to my chamber; Pu[SEQ_SPLITTER]t on clothes of mine.
+
+PETRUCHIO:
+Not I, believe m[SEQ_SPLITTER]e: thus I'll visit her.
+
+BAPTISTA:
+But thus, I tru[SEQ_SPLITTER]st, you will not marry her.
+
+PETRUCHIO:
+Good sooth[SEQ_SPLITTER], even thus; therefore ha' done with words:
+To me [SEQ_SPLITTER]she's married, not unto my clothes:
+Could I repair[SEQ_SPLITTER] what she will wear in me,
+As I can change these p[SEQ_SPLITTER]oor accoutrements,
+'Twere well for Kate and better[SEQ_SPLITTER] for myself.
+But what a fool am I to chat with you[SEQ_SPLITTER],
+When I should bid good morrow to my bride,
+And s[SEQ_SPLITTER]eal the title with a lovely kiss!
+
+TRANIO:
+He hath[SEQ_SPLITTER] some meaning in his mad attire:
+We will persuade [SEQ_SPLITTER]him, be it possible,
+To put on better ere he go to[SEQ_SPLITTER] church.
+
+BAPTISTA:
+I'll after him, and see the ev[SEQ_SPLITTER]ent of this.
+
+TRANIO:
+But to her love concerneth u[SEQ_SPLITTER]s to add
+Her father's liking: which to bring to pa[SEQ_SPLITTER]ss,
+As I before unparted to your worship,
+I am to [SEQ_SPLITTER]get a man,--whate'er he be,
+It skills not much. we[SEQ_SPLITTER]'ll fit him to our turn,--
+And he shall be Vincent[SEQ_SPLITTER]io of Pisa;
+And make assurance here in Padua
+Of gr[SEQ_SPLITTER]eater sums than I have promised.
+So shall you quie[SEQ_SPLITTER]tly enjoy your hope,
+And marry sweet Bianca with c[SEQ_SPLITTER]onsent.
+
+LUCENTIO:
+Were it not that my fellow-scho[SEQ_SPLITTER]ol-master
+Doth watch Bianca's steps so narrowly,
+'[SEQ_SPLITTER]Twere good, methinks, to steal our marriage;
+Which[SEQ_SPLITTER] once perform'd, let all the world say no,
+I'll ke[SEQ_SPLITTER]ep mine own, despite of all the world.
+
+TRANIO:
+Th[SEQ_SPLITTER]at by degrees we mean to look into,
+And watch our [SEQ_SPLITTER]vantage in this business:
+We'll over-reach the gre[SEQ_SPLITTER]ybeard, Gremio,
+The narrow-prying father, Minola,
+[SEQ_SPLITTER]The quaint musician, amorous Licio;
+All for my mas[SEQ_SPLITTER]ter's sake, Lucentio.
+Signior Gremio, came you fro[SEQ_SPLITTER]m the church?
+
+GREMIO:
+As willingly as e'er I came[SEQ_SPLITTER] from school.
+
+TRANIO:
+And is the bride and brideg[SEQ_SPLITTER]room coming home?
+
+GREMIO:
+A bridegroom say you? '[SEQ_SPLITTER]tis a groom indeed,
+A grumbling groom, and that th[SEQ_SPLITTER]e girl shall find.
+
+TRANIO:
+Curster than she? why,[SEQ_SPLITTER] 'tis impossible.
+
+GREMIO:
+Why he's a devil, a dev[SEQ_SPLITTER]il, a very fiend.
+
+TRANIO:
+Why, she's a devil, a d[SEQ_SPLITTER]evil, the devil's dam.
+
+GREMIO:
+Tut, she's a lamb,[SEQ_SPLITTER] a dove, a fool to him!
+I'll tell you, Sir Lucenti[SEQ_SPLITTER]o: when the priest
+Should ask, if Katharina should[SEQ_SPLITTER] be his wife,
+'Ay, by gogs-wouns,' quoth he; and s[SEQ_SPLITTER]wore so loud,
+That, all-amazed, the priest let fal[SEQ_SPLITTER]l the book;
+And, as he stoop'd again to take it up[SEQ_SPLITTER],
+The mad-brain'd bridegroom took him such a cuff
+[SEQ_SPLITTER]That down fell priest and book and book and priest[SEQ_SPLITTER]:
+'Now take them up,' quoth he, 'if any list.'
+
+TR[SEQ_SPLITTER]ANIO:
+What said the wench when he rose again?
+
+GRE[SEQ_SPLITTER]MIO:
+Trembled and shook; for why, he stamp'd and s[SEQ_SPLITTER]wore,
+As if the vicar meant to cozen him.
+But afte[SEQ_SPLITTER]r many ceremonies done,
+He calls for wine: 'A heal[SEQ_SPLITTER]th!' quoth he, as if
+He had been aboard, carousing[SEQ_SPLITTER] to his mates
+After a storm; quaff'd off the musca[SEQ_SPLITTER]del
+And threw the sops all in the sexton's face;
+H[SEQ_SPLITTER]aving no other reason
+But that his beard grew thin[SEQ_SPLITTER] and hungerly
+And seem'd to ask him sops as he was[SEQ_SPLITTER] drinking.
+This done, he took the bride about the [SEQ_SPLITTER]neck
+And kiss'd her lips with such a clamorous sma[SEQ_SPLITTER]ck
+That at the parting all the church did echo:
+An[SEQ_SPLITTER]d I seeing this came thence for very shame;
+And af[SEQ_SPLITTER]ter me, I know, the rout is coming.
+Such a mad mar[SEQ_SPLITTER]riage never was before:
+Hark, hark! I hear the min[SEQ_SPLITTER]strels play.
+
+PETRUCHIO:
+Gentlemen and friends, I [SEQ_SPLITTER]thank you for your pains:
+I know you think to dine[SEQ_SPLITTER] with me to-day,
+And have prepared great store of [SEQ_SPLITTER]wedding cheer;
+But so it is, my haste doth call me[SEQ_SPLITTER] hence,
+And therefore here I mean to take my leave[SEQ_SPLITTER].
+
+BAPTISTA:
+Is't possible you will away to-night?[SEQ_SPLITTER]
+
+PETRUCHIO:
+I must away to-day, before night come[SEQ_SPLITTER]:
+Make it no wonder; if you knew my business,
+You [SEQ_SPLITTER]would entreat me rather go than stay.
+And, honest [SEQ_SPLITTER]company, I thank you all,
+That have beheld me give[SEQ_SPLITTER] away myself
+To this most patient, sweet and virtu[SEQ_SPLITTER]ous wife:
+Dine with my father, drink a health to m[SEQ_SPLITTER]e;
+For I must hence; and farewell to you all.
+
+TRA[SEQ_SPLITTER]NIO:
+Let us entreat you stay till after dinner.
+
+P[SEQ_SPLITTER]ETRUCHIO:
+It may not be.
+
+GREMIO:
+Let me entreat y[SEQ_SPLITTER]ou.
+
+PETRUCHIO:
+It cannot be.
+
+KATHARINA:
+Let me e[SEQ_SPLITTER]ntreat you.
+
+PETRUCHIO:
+I am content.
+
+KATHARINA:
+[SEQ_SPLITTER]Are you content to stay?
+
+PETRUCHIO:
+I am content [SEQ_SPLITTER]you shall entreat me stay;
+But yet not stay, entre[SEQ_SPLITTER]at me how you can.
+
+KATHARINA:
+Now, if you love me[SEQ_SPLITTER], stay.
+
+PETRUCHIO:
+Grumio, my horse.
+
+GRUMIO:
+Ay,[SEQ_SPLITTER] sir, they be ready: the oats have eaten the horse[SEQ_SPLITTER]s.
+
+KATHARINA:
+Nay, then,
+Do what thou canst, I wi[SEQ_SPLITTER]ll not go to-day;
+No, nor to-morrow, not till I pl[SEQ_SPLITTER]ease myself.
+The door is open, sir; there lies you[SEQ_SPLITTER]r way;
+You may be jogging whiles your boots are gr[SEQ_SPLITTER]een;
+For me, I'll not be gone till I please myself[SEQ_SPLITTER]:
+'Tis like you'll prove a jolly surly groom,
+That[SEQ_SPLITTER] take it on you at the first so roundly.
+
+PETRUCHI[SEQ_SPLITTER]O:
+O Kate, content thee; prithee, be not angry.
+
+K[SEQ_SPLITTER]ATHARINA:
+I will be angry: what hast thou to do?
+F[SEQ_SPLITTER]ather, be quiet; he shall stay my leisure.
+
+GREMIO[SEQ_SPLITTER]:
+Ay, marry, sir, now it begins to work.
+
+KATARINA[SEQ_SPLITTER]:
+Gentlemen, forward to the bridal dinner:
+I see a[SEQ_SPLITTER] woman may be made a fool,
+If she had not a spirit[SEQ_SPLITTER] to resist.
+
+PETRUCHIO:
+They shall go forward, Kat[SEQ_SPLITTER]e, at thy command.
+Obey the bride, you that attend[SEQ_SPLITTER] on her;
+Go to the feast, revel and domineer,
+Caro[SEQ_SPLITTER]use full measure to her maidenhead,
+Be mad and mer[SEQ_SPLITTER]ry, or go hang yourselves:
+But for my bonny Kate, [SEQ_SPLITTER]she must with me.
+Nay, look not big, nor stamp, no[SEQ_SPLITTER]r stare, nor fret;
+I will be master of what is min[SEQ_SPLITTER]e own:
+She is my goods, my chattels; she is my hou[SEQ_SPLITTER]se,
+My household stuff, my field, my barn,
+My hors[SEQ_SPLITTER]e, my ox, my ass, my any thing;
+And here she stand[SEQ_SPLITTER]s, touch her whoever dare;
+I'll bring mine action [SEQ_SPLITTER]on the proudest he
+That stops my way in Padua. Gru[SEQ_SPLITTER]mio,
+Draw forth thy weapon, we are beset with thie[SEQ_SPLITTER]ves;
+Rescue thy mistress, if thou be a man.
+Fear n[SEQ_SPLITTER]ot, sweet wench, they shall not touch
+thee, Kate:
+[SEQ_SPLITTER]I'll buckler thee against a million.
+
+BAPTISTA:
+Na[SEQ_SPLITTER]y, let them go, a couple of quiet ones.
+
+GREMIO:
+W[SEQ_SPLITTER]ent they not quickly, I should die with laughing.
+[SEQ_SPLITTER]
+TRANIO:
+Of all mad matches never was the like.
+
+L[SEQ_SPLITTER]UCENTIO:
+Mistress, what's your opinion of your sis[SEQ_SPLITTER]ter?
+
+BIANCA:
+That, being mad herself, she's madly[SEQ_SPLITTER] mated.
+
+GREMIO:
+I warrant him, Petruchio is Kated[SEQ_SPLITTER].
+
+BAPTISTA:
+Neighbours and friends, though bride [SEQ_SPLITTER]and
+bridegroom wants
+For to supply the places at t[SEQ_SPLITTER]he table,
+You know there wants no junkets at the f[SEQ_SPLITTER]east.
+Lucentio, you shall supply the bridegroom's [SEQ_SPLITTER]place:
+And let Bianca take her sister's room.
+
+TRA[SEQ_SPLITTER]NIO:
+Shall sweet Bianca practise how to bride it?
+[SEQ_SPLITTER]
+BAPTISTA:
+She shall, Lucentio. Come, gentlemen, l[SEQ_SPLITTER]et's go.
+
+GRUMIO:
+Fie, fie on all tired jades, on [SEQ_SPLITTER]all mad masters, and
+all foul ways! Was ever man s[SEQ_SPLITTER]o beaten? was ever
+man so rayed? was ever man so w[SEQ_SPLITTER]eary? I am sent
+before to make a fire, and they ar[SEQ_SPLITTER]e coming after to
+warm them. Now, were not I a lit[SEQ_SPLITTER]tle pot and soon
+hot, my very lips might freeze to[SEQ_SPLITTER] my teeth, my
+tongue to the roof of my mouth, my h[SEQ_SPLITTER]eart in my
+belly, ere I should come by a fire to t[SEQ_SPLITTER]haw me: but
+I, with blowing the fire, shall warm m[SEQ_SPLITTER]yself; for,
+considering the weather, a taller man [SEQ_SPLITTER]than I will
+take cold. Holla, ho! Curtis.
+
+CURTIS:[SEQ_SPLITTER]
+Who is that calls so coldly?
+
+GRUMIO:
+A piece of [SEQ_SPLITTER]ice: if thou doubt it, thou mayst slide
+from my sh[SEQ_SPLITTER]oulder to my heel with no greater a run
+but my hea[SEQ_SPLITTER]d and my neck. A fire good Curtis.
+
+CURTIS:
+Is my [SEQ_SPLITTER]master and his wife coming, Grumio?
+
+GRUMIO:
+O, ay[SEQ_SPLITTER], Curtis, ay: and therefore fire, fire; cast
+on no[SEQ_SPLITTER] water.
+
+CURTIS:
+Is she so hot a shrew as she's re[SEQ_SPLITTER]ported?
+
+GRUMIO:
+She was, good Curtis, before this[SEQ_SPLITTER] frost: but, thou
+knowest, winter tames man, woman[SEQ_SPLITTER] and beast; for it
+hath tamed my old master and my[SEQ_SPLITTER] new mistress and
+myself, fellow Curtis.
+
+CURTIS:
+[SEQ_SPLITTER]Away, you three-inch fool! I am no beast.
+
+GRUMIO:[SEQ_SPLITTER]
+Am I but three inches? why, thy horn is a foot; a[SEQ_SPLITTER]nd
+so long am I at the least. But wilt thou make a[SEQ_SPLITTER]
+fire, or shall I complain on thee to our mistress[SEQ_SPLITTER],
+whose hand, she being now at hand, thou shalt so[SEQ_SPLITTER]on
+feel, to thy cold comfort, for being slow in th[SEQ_SPLITTER]y hot office?
+
+CURTIS:
+I prithee, good Grumio, tel[SEQ_SPLITTER]l me, how goes the world?
+
+GRUMIO:
+A cold world, C[SEQ_SPLITTER]urtis, in every office but thine; and
+therefore fi[SEQ_SPLITTER]re: do thy duty, and have thy duty; for
+my master [SEQ_SPLITTER]and mistress are almost frozen to death.
+
+CURTIS:
+[SEQ_SPLITTER]There's fire ready; and therefore, good Grumio, th[SEQ_SPLITTER]e news.
+
+GRUMIO:
+Why, 'Jack, boy! ho! boy!' and as[SEQ_SPLITTER] much news as
+will thaw.
+
+CURTIS:
+Come, you are so[SEQ_SPLITTER] full of cony-catching!
+
+GRUMIO:
+Why, therefore fi[SEQ_SPLITTER]re; for I have caught extreme cold.
+Where's the co[SEQ_SPLITTER]ok? is supper ready, the house
+trimmed, rushes str[SEQ_SPLITTER]ewed, cobwebs swept; the
+serving-men in their new [SEQ_SPLITTER]fustian, their white
+stockings, and every officer [SEQ_SPLITTER]his wedding-garment on?
+Be the jacks fair within, [SEQ_SPLITTER]the jills fair without,
+the carpets laid, and ever[SEQ_SPLITTER]y thing in order?
+
+CURTIS:
+All ready; and therefor[SEQ_SPLITTER]e, I pray thee, news.
+
+GRUMIO:
+First, know, my hor[SEQ_SPLITTER]se is tired; my master and
+mistress fallen out.
+
+C[SEQ_SPLITTER]URTIS:
+How?
+
+GRUMIO:
+Out of their saddles into the[SEQ_SPLITTER] dirt; and thereby
+hangs a tale.
+
+CURTIS:
+Let's ha[SEQ_SPLITTER]'t, good Grumio.
+
+GRUMIO:
+Lend thine ear.
+
+CURTIS:[SEQ_SPLITTER]
+Here.
+
+GRUMIO:
+There.
+
+CURTIS:
+This is to feel a [SEQ_SPLITTER]tale, not to hear a tale.
+
+GRUMIO:
+And therefore '[SEQ_SPLITTER]tis called a sensible tale: and this
+cuff was but [SEQ_SPLITTER]to knock at your ear, and beseech
+listening. Now I[SEQ_SPLITTER] begin: Imprimis, we came down a
+foul hill, my mas[SEQ_SPLITTER]ter riding behind my mistress,--
+
+CURTIS:
+Both of [SEQ_SPLITTER]one horse?
+
+GRUMIO:
+What's that to thee?
+
+CURTIS:
+[SEQ_SPLITTER]Why, a horse.
+
+GRUMIO:
+Tell thou the tale: but had[SEQ_SPLITTER]st thou not crossed me,
+thou shouldst have heard h[SEQ_SPLITTER]ow her horse fell and she
+under her horse; thou sh[SEQ_SPLITTER]ouldst have heard in how
+miry a place, how she was[SEQ_SPLITTER] bemoiled, how he left her
+with the horse upon her[SEQ_SPLITTER], how he beat me because
+her horse stumbled, how s[SEQ_SPLITTER]he waded through the dirt
+to pluck him off me, how[SEQ_SPLITTER] he swore, how she prayed,
+that never prayed befor[SEQ_SPLITTER]e, how I cried, how the
+horses ran away, how her b[SEQ_SPLITTER]ridle was burst, how I
+lost my crupper, with many [SEQ_SPLITTER]things of worthy memory,
+which now shall die in ob[SEQ_SPLITTER]livion and thou return
+unexperienced to thy grave.[SEQ_SPLITTER]
+
+CURTIS:
+By this reckoning he is more shrew than [SEQ_SPLITTER]she.
+
+GRUMIO:
+Ay; and that thou and the proudest o[SEQ_SPLITTER]f you all shall
+find when he comes home. But what [SEQ_SPLITTER]talk I of this?
+Call forth Nathaniel, Joseph, Nich[SEQ_SPLITTER]olas, Philip,
+Walter, Sugarsop and the rest: let t[SEQ_SPLITTER]heir heads be
+sleekly combed their blue coats brus[SEQ_SPLITTER]hed and their
+garters of an indifferent knit: let [SEQ_SPLITTER]them curtsy
+with their left legs and not presume t[SEQ_SPLITTER]o touch a hair
+of my master's horse-tail till they[SEQ_SPLITTER] kiss their
+hands. Are they all ready?
+
+CURTIS:
+Th[SEQ_SPLITTER]ey are.
+
+GRUMIO:
+Call them forth.
+
+CURTIS:
+Do you [SEQ_SPLITTER]hear, ho? you must meet my master to
+countenance m[SEQ_SPLITTER]y mistress.
+
+GRUMIO:
+Why, she hath a face of her o[SEQ_SPLITTER]wn.
+
+CURTIS:
+Who knows not that?
+
+GRUMIO:
+Thou, it[SEQ_SPLITTER] seems, that calls for company to
+countenance her.[SEQ_SPLITTER]
+
+CURTIS:
+I call them forth to credit her.
+
+GRUMIO[SEQ_SPLITTER]:
+Why, she comes to borrow nothing of them.
+
+NATHA[SEQ_SPLITTER]NIEL:
+Welcome home, Grumio!
+
+PHILIP:
+How now, Grum[SEQ_SPLITTER]io!
+
+JOSEPH:
+What, Grumio!
+
+NICHOLAS:
+Fellow Grumi[SEQ_SPLITTER]o!
+
+NATHANIEL:
+How now, old lad?
+
+GRUMIO:
+Welcome,[SEQ_SPLITTER] you;--how now, you;-- what, you;--fellow,
+you;--a[SEQ_SPLITTER]nd thus much for greeting. Now, my spruce
+companio[SEQ_SPLITTER]ns, is all ready, and all things neat?
+
+NATHANIEL:[SEQ_SPLITTER]
+All things is ready. How near is our master?
+
+GRU[SEQ_SPLITTER]MIO:
+E'en at hand, alighted by this; and therefore[SEQ_SPLITTER] be
+not--Cock's passion, silence! I hear my master[SEQ_SPLITTER].
+
+PETRUCHIO:
+Where be these knaves? What, no man [SEQ_SPLITTER]at door
+To hold my stirrup nor to take my horse!
+W[SEQ_SPLITTER]here is Nathaniel, Gregory, Philip?
+
+ALL SERVING-M[SEQ_SPLITTER]EN:
+Here, here, sir; here, sir.
+
+PETRUCHIO:
+Here, [SEQ_SPLITTER]sir! here, sir! here, sir! here, sir!
+You logger-h[SEQ_SPLITTER]eaded and unpolish'd grooms!
+What, no attendance? [SEQ_SPLITTER]no regard? no duty?
+Where is the foolish knave I s[SEQ_SPLITTER]ent before?
+
+GRUMIO:
+Here, sir; as foolish as I wa[SEQ_SPLITTER]s before.
+
+PETRUCHIO:
+You peasant swain! you whore[SEQ_SPLITTER]son malt-horse drudge!
+Did I not bid thee meet me [SEQ_SPLITTER]in the park,
+And bring along these rascal knaves w[SEQ_SPLITTER]ith thee?
+
+GRUMIO:
+Nathaniel's coat, sir, was not [SEQ_SPLITTER]fully made,
+And Gabriel's pumps were all unpink'd [SEQ_SPLITTER]i' the heel;
+There was no link to colour Peter's h[SEQ_SPLITTER]at,
+And Walter's dagger was not come from sheathin[SEQ_SPLITTER]g:
+There were none fine but Adam, Ralph, and Grego[SEQ_SPLITTER]ry;
+The rest were ragged, old, and beggarly;
+Yet, [SEQ_SPLITTER]as they are, here are they come to meet you.
+
+PETR[SEQ_SPLITTER]UCHIO:
+Go, rascals, go, and fetch my supper in.
+Wh[SEQ_SPLITTER]ere is the life that late I led--
+Where are those-[SEQ_SPLITTER]-Sit down, Kate, and welcome.--
+Sound, sound, soun[SEQ_SPLITTER]d, sound!
+Why, when, I say? Nay, good sweet Kate, [SEQ_SPLITTER]be merry.
+Off with my boots, you rogues! you villa[SEQ_SPLITTER]ins, when?
+It was the friar of orders grey,
+As he [SEQ_SPLITTER]forth walked on his way:--
+Out, you rogue! you plu[SEQ_SPLITTER]ck my foot awry:
+Take that, and mend the plucking [SEQ_SPLITTER]off the other.
+Be merry, Kate. Some water, here; w[SEQ_SPLITTER]hat, ho!
+Where's my spaniel Troilus? Sirrah, get y[SEQ_SPLITTER]ou hence,
+And bid my cousin Ferdinand come hither:[SEQ_SPLITTER]
+One, Kate, that you must kiss, and be acquainted [SEQ_SPLITTER]with.
+Where are my slippers? Shall I have some wat[SEQ_SPLITTER]er?
+Come, Kate, and wash, and welcome heartily.
+Yo[SEQ_SPLITTER]u whoreson villain! will you let it fall?
+
+KATHARI[SEQ_SPLITTER]NA:
+Patience, I pray you; 'twas a fault unwilling.[SEQ_SPLITTER]
+
+PETRUCHIO:
+A whoreson beetle-headed, flap-ear'd [SEQ_SPLITTER]knave!
+Come, Kate, sit down; I know you have a sto[SEQ_SPLITTER]mach.
+Will you give thanks, sweet Kate; or else sh[SEQ_SPLITTER]all I?
+What's this? mutton?
+
+First Servant:
+Ay.
+
+P[SEQ_SPLITTER]ETRUCHIO:
+Who brought it?
+
+PETER:
+I.
+
+PETRUCHIO:
+'[SEQ_SPLITTER]Tis burnt; and so is all the meat.
+What dogs are t[SEQ_SPLITTER]hese! Where is the rascal cook?
+How durst you, vil[SEQ_SPLITTER]lains, bring it from the dresser,
+And serve it thu[SEQ_SPLITTER]s to me that love it not?
+Theretake it to you, tre[SEQ_SPLITTER]nchers, cups, and all;
+You heedless joltheads and [SEQ_SPLITTER]unmanner'd slaves!
+What, do you grumble? I'll be w[SEQ_SPLITTER]ith you straight.
+
+KATHARINA:
+I pray you, husband,[SEQ_SPLITTER] be not so disquiet:
+The meat was well, if you wer[SEQ_SPLITTER]e so contented.
+
+PETRUCHIO:
+I tell thee, Kate, 'tw[SEQ_SPLITTER]as burnt and dried away;
+And I expressly am forbid[SEQ_SPLITTER] to touch it,
+For it engenders choler, planteth an[SEQ_SPLITTER]ger;
+And better 'twere that both of us did fast,
+S[SEQ_SPLITTER]ince, of ourselves, ourselves are choleric,
+Than f[SEQ_SPLITTER]eed it with such over-roasted flesh.
+Be patient; t[SEQ_SPLITTER]o-morrow 't shall be mended,
+And, for this night, [SEQ_SPLITTER]we'll fast for company:
+Come, I will bring thee to[SEQ_SPLITTER] thy bridal chamber.
+
+NATHANIEL:
+Peter, didst ever[SEQ_SPLITTER] see the like?
+
+PETER:
+He kills her in her own hum[SEQ_SPLITTER]our.
+
+GRUMIO:
+Where is he?
+
+CURTIS:
+In her chamber[SEQ_SPLITTER], making a sermon of continency to her;
+And rails,[SEQ_SPLITTER] and swears, and rates, that she, poor soul,
+Knows[SEQ_SPLITTER] not which way to stand, to look, to speak,
+And si[SEQ_SPLITTER]ts as one new-risen from a dream.
+Away, away! for [SEQ_SPLITTER]he is coming hither.
+
+PETRUCHIO:
+Thus have I polit[SEQ_SPLITTER]icly begun my reign,
+And 'tis my hope to end succe[SEQ_SPLITTER]ssfully.
+My falcon now is sharp and passing empty;[SEQ_SPLITTER]
+And till she stoop she must not be full-gorged,
+F[SEQ_SPLITTER]or then she never looks upon her lure.
+Another way[SEQ_SPLITTER] I have to man my haggard,
+To make her come and kn[SEQ_SPLITTER]ow her keeper's call,
+That is, to watch her, as we[SEQ_SPLITTER] watch these kites
+That bate and beat and will not[SEQ_SPLITTER] be obedient.
+She eat no meat to-day, nor none sha[SEQ_SPLITTER]ll eat;
+Last night she slept not, nor to-night she[SEQ_SPLITTER] shall not;
+As with the meat, some undeserved faul[SEQ_SPLITTER]t
+I'll find about the making of the bed;
+And here [SEQ_SPLITTER]I'll fling the pillow, there the bolster,
+This way[SEQ_SPLITTER] the coverlet, another way the sheets:
+Ay, and ami[SEQ_SPLITTER]d this hurly I intend
+That all is done in reverend[SEQ_SPLITTER] care of her;
+And in conclusion she shall watch al[SEQ_SPLITTER]l night:
+And if she chance to nod I'll rail and br[SEQ_SPLITTER]awl
+And with the clamour keep her still awake.
+Thi[SEQ_SPLITTER]s is a way to kill a wife with kindness;
+And thus [SEQ_SPLITTER]I'll curb her mad and headstrong humour.
+He that k[SEQ_SPLITTER]nows better how to tame a shrew,
+Now let him speak[SEQ_SPLITTER]: 'tis charity to show.
+
+TRANIO:
+Is't possible, fr[SEQ_SPLITTER]iend Licio, that Mistress Bianca
+Doth fancy any ot[SEQ_SPLITTER]her but Lucentio?
+I tell you, sir, she bears me fa[SEQ_SPLITTER]ir in hand.
+
+HORTENSIO:
+Sir, to satisfy you in wha[SEQ_SPLITTER]t I have said,
+Stand by and mark the manner of his[SEQ_SPLITTER] teaching.
+
+LUCENTIO:
+Now, mistress, profit you in[SEQ_SPLITTER] what you read?
+
+BIANCA:
+What, master, read you? f[SEQ_SPLITTER]irst resolve me that.
+
+LUCENTIO:
+I read that I pro[SEQ_SPLITTER]fess, the Art to Love.
+
+BIANCA:
+And may you prove,[SEQ_SPLITTER] sir, master of your art!
+
+LUCENTIO:
+While you, sw[SEQ_SPLITTER]eet dear, prove mistress of my heart!
+
+HORTENSIO:
+[SEQ_SPLITTER]Quick proceeders, marry! Now, tell me, I pray,
+You[SEQ_SPLITTER] that durst swear at your mistress Bianca
+Loved no[SEQ_SPLITTER]ne in the world so well as Lucentio.
+
+TRANIO:
+O de[SEQ_SPLITTER]spiteful love! unconstant womankind!
+I tell thee, [SEQ_SPLITTER]Licio, this is wonderful.
+
+HORTENSIO:
+Mistake no m[SEQ_SPLITTER]ore: I am not Licio,
+Nor a musician, as I seem to [SEQ_SPLITTER]be;
+But one that scorn to live in this disguise,
+F[SEQ_SPLITTER]or such a one as leaves a gentleman,
+And makes a g[SEQ_SPLITTER]od of such a cullion:
+Know, sir, that I am call'd [SEQ_SPLITTER]Hortensio.
+
+TRANIO:
+Signior Hortensio, I have ofte[SEQ_SPLITTER]n heard
+Of your entire affection to Bianca;
+And si[SEQ_SPLITTER]nce mine eyes are witness of her lightness,
+I will[SEQ_SPLITTER] with you, if you be so contented,
+Forswear Bianca[SEQ_SPLITTER] and her love for ever.
+
+HORTENSIO:
+See, how they [SEQ_SPLITTER]kiss and court! Signior Lucentio,
+Here is my hand,[SEQ_SPLITTER] and here I firmly vow
+Never to woo her no more, b[SEQ_SPLITTER]ut do forswear her,
+As one unworthy all the former[SEQ_SPLITTER] favours
+That I have fondly flatter'd her withal.
+[SEQ_SPLITTER]
+TRANIO:
+And here I take the unfeigned oath,
+Never[SEQ_SPLITTER] to marry with her though she would entreat:
+Fie o[SEQ_SPLITTER]n her! see, how beastly she doth court him!
+
+HORTE[SEQ_SPLITTER]NSIO:
+Would all the world but he had quite forswor[SEQ_SPLITTER]n!
+For me, that I may surely keep mine oath,
+I wil[SEQ_SPLITTER]l be married to a wealthy widow,
+Ere three days pa[SEQ_SPLITTER]ss, which hath as long loved me
+As I have loved th[SEQ_SPLITTER]is proud disdainful haggard.
+And so farewell, Sign[SEQ_SPLITTER]ior Lucentio.
+Kindness in women, not their beauteo[SEQ_SPLITTER]us looks,
+Shall win my love: and so I take my leav[SEQ_SPLITTER]e,
+In resolution as I swore before.
+
+TRANIO:
+Mistr[SEQ_SPLITTER]ess Bianca, bless you with such grace
+As 'longeth [SEQ_SPLITTER]to a lover's blessed case!
+Nay, I have ta'en you n[SEQ_SPLITTER]apping, gentle love,
+And have forsworn you with Ho[SEQ_SPLITTER]rtensio.
+
+BIANCA:
+Tranio, you jest: but have you b[SEQ_SPLITTER]oth forsworn me?
+
+TRANIO:
+Mistress, we have.
+
+LUCE[SEQ_SPLITTER]NTIO:
+Then we are rid of Licio.
+
+TRANIO:
+I' faith,[SEQ_SPLITTER] he'll have a lusty widow now,
+That shall be wood [SEQ_SPLITTER]and wedded in a day.
+
+BIANCA:
+God give him joy!
+
+T[SEQ_SPLITTER]RANIO:
+Ay, and he'll tame her.
+
+BIANCA:
+He says so[SEQ_SPLITTER], Tranio.
+
+TRANIO:
+Faith, he is gone unto the tami[SEQ_SPLITTER]ng-school.
+
+BIANCA:
+The taming-school! what, is th[SEQ_SPLITTER]ere such a place?
+
+TRANIO:
+Ay, mistress, and Petru[SEQ_SPLITTER]chio is the master;
+That teacheth tricks eleven an[SEQ_SPLITTER]d twenty long,
+To tame a shrew and charm her chatt[SEQ_SPLITTER]ering tongue.
+
+BIONDELLO:
+O master, master, I have[SEQ_SPLITTER] watch'd so long
+That I am dog-weary: but at last [SEQ_SPLITTER]I spied
+An ancient angel coming down the hill,
+Wil[SEQ_SPLITTER]l serve the turn.
+
+TRANIO:
+What is he, Biondello?
+[SEQ_SPLITTER]
+BIONDELLO:
+Master, a mercatante, or a pedant,
+I k[SEQ_SPLITTER]now not what; but format in apparel,
+In gait and c[SEQ_SPLITTER]ountenance surely like a father.
+
+LUCENTIO:
+And wh[SEQ_SPLITTER]at of him, Tranio?
+
+TRANIO:
+If he be credulous and[SEQ_SPLITTER] trust my tale,
+I'll make him glad to seem Vincent[SEQ_SPLITTER]io,
+And give assurance to Baptista Minola,
+As if h[SEQ_SPLITTER]e were the right Vincentio
+Take in your love, and [SEQ_SPLITTER]then let me alone.
+
+Pedant:
+God save you, sir!
+
+TR[SEQ_SPLITTER]ANIO:
+And you, sir! you are welcome.
+Travel you fa[SEQ_SPLITTER]r on, or are you at the farthest?
+
+Pedant:
+Sir, at[SEQ_SPLITTER] the farthest for a week or two:
+But then up farth[SEQ_SPLITTER]er, and as for as Rome;
+And so to Tripoli, if God [SEQ_SPLITTER]lend me life.
+
+TRANIO:
+What countryman, I pray?
+
+P[SEQ_SPLITTER]edant:
+Of Mantua.
+
+TRANIO:
+Of Mantua, sir? marry, [SEQ_SPLITTER]God forbid!
+And come to Padua, careless of your li[SEQ_SPLITTER]fe?
+
+Pedant:
+My life, sir! how, I pray? for that g[SEQ_SPLITTER]oes hard.
+
+TRANIO:
+'Tis death for any one in Mantu[SEQ_SPLITTER]a
+To come to Padua. Know you not the cause?
+Your s[SEQ_SPLITTER]hips are stay'd at Venice, and the duke,
+For priva[SEQ_SPLITTER]te quarrel 'twixt your duke and him,
+Hath publish'[SEQ_SPLITTER]d and proclaim'd it openly:
+'Tis, marvel, but that[SEQ_SPLITTER] you are but newly come,
+You might have heard it e[SEQ_SPLITTER]lse proclaim'd about.
+
+Pedant:
+Alas! sir, it is wo[SEQ_SPLITTER]rse for me than so;
+For I have bills for money by [SEQ_SPLITTER]exchange
+From Florence and must here deliver them.[SEQ_SPLITTER]
+
+TRANIO:
+Well, sir, to do you courtesy,
+This will[SEQ_SPLITTER] I do, and this I will advise you:
+First, tell me,[SEQ_SPLITTER] have you ever been at Pisa?
+
+Pedant:
+Ay, sir, in [SEQ_SPLITTER]Pisa have I often been,
+Pisa renowned for grave ci[SEQ_SPLITTER]tizens.
+
+TRANIO:
+Among them know you one Vincentio[SEQ_SPLITTER]?
+
+Pedant:
+I know him not, but I have heard of him[SEQ_SPLITTER];
+A merchant of incomparable wealth.
+
+TRANIO:
+He i[SEQ_SPLITTER]s my father, sir; and, sooth to say,
+In countenanc[SEQ_SPLITTER]e somewhat doth resemble you.
+
+BIONDELLO:
+
+TRANIO:[SEQ_SPLITTER]
+To save your life in this extremity,
+This favour [SEQ_SPLITTER]will I do you for his sake;
+And think it not the w[SEQ_SPLITTER]orst of an your fortunes
+That you are like to Sir [SEQ_SPLITTER]Vincentio.
+His name and credit shall you undertake[SEQ_SPLITTER],
+And in my house you shall be friendly lodged:
+Lo[SEQ_SPLITTER]ok that you take upon you as you should;
+You under[SEQ_SPLITTER]stand me, sir: so shall you stay
+Till you have don[SEQ_SPLITTER]e your business in the city:
+If this be courtesy, [SEQ_SPLITTER]sir, accept of it.
+
+Pedant:
+O sir, I do; and will [SEQ_SPLITTER]repute you ever
+The patron of my life and liberty.[SEQ_SPLITTER]
+
+TRANIO:
+Then go with me to make the matter good.[SEQ_SPLITTER]
+This, by the way, I let you understand;
+my father[SEQ_SPLITTER] is here look'd for every day,
+To pass assurance o[SEQ_SPLITTER]f a dower in marriage
+'Twixt me and one Baptista's[SEQ_SPLITTER] daughter here:
+In all these circumstances I'll in[SEQ_SPLITTER]struct you:
+Go with me to clothe you as becomes yo[SEQ_SPLITTER]u.
+
+GRUMIO:
+No, no, forsooth; I dare not for my li[SEQ_SPLITTER]fe.
+
+KATHARINA:
+The more my wrong, the more his sp[SEQ_SPLITTER]ite appears:
+What, did he marry me to famish me?
+B[SEQ_SPLITTER]eggars, that come unto my father's door,
+Upon entr[SEQ_SPLITTER]eaty have a present aims;
+If not, elsewhere they m[SEQ_SPLITTER]eet with charity:
+But I, who never knew how to ent[SEQ_SPLITTER]reat,
+Nor never needed that I should entreat,
+Am s[SEQ_SPLITTER]tarved for meat, giddy for lack of sleep,
+With oat[SEQ_SPLITTER]h kept waking and with brawling fed:
+And that whic[SEQ_SPLITTER]h spites me more than all these wants,
+He does it [SEQ_SPLITTER]under name of perfect love;
+As who should say, if [SEQ_SPLITTER]I should sleep or eat,
+'Twere deadly sickness or e[SEQ_SPLITTER]lse present death.
+I prithee go and get me some re[SEQ_SPLITTER]past;
+I care not what, so it be wholesome food.
+
+G[SEQ_SPLITTER]RUMIO:
+What say you to a neat's foot?
+
+KATHARINA:
+[SEQ_SPLITTER]'Tis passing good: I prithee let me have it.
+
+GRUM[SEQ_SPLITTER]IO:
+I fear it is too choleric a meat.
+How say you [SEQ_SPLITTER]to a fat tripe finely broil'd?
+
+KATHARINA:
+I like [SEQ_SPLITTER]it well: good Grumio, fetch it me.
+
+GRUMIO:
+I cann[SEQ_SPLITTER]ot tell; I fear 'tis choleric.
+What say you to a p[SEQ_SPLITTER]iece of beef and mustard?
+
+KATHARINA:
+A dish that [SEQ_SPLITTER]I do love to feed upon.
+
+GRUMIO:
+Ay, but the musta[SEQ_SPLITTER]rd is too hot a little.
+
+KATHARINA:
+Why then, the [SEQ_SPLITTER]beef, and let the mustard rest.
+
+GRUMIO:
+Nay then,[SEQ_SPLITTER] I will not: you shall have the mustard,
+Or else y[SEQ_SPLITTER]ou get no beef of Grumio.
+
+KATHARINA:
+Then both, o[SEQ_SPLITTER]r one, or any thing thou wilt.
+
+GRUMIO:
+Why then, [SEQ_SPLITTER]the mustard without the beef.
+
+KATHARINA:
+Go, get [SEQ_SPLITTER]thee gone, thou false deluding slave,
+That feed'st[SEQ_SPLITTER] me with the very name of meat:
+Sorrow on thee and[SEQ_SPLITTER] all the pack of you,
+That triumph thus upon my mi[SEQ_SPLITTER]sery!
+Go, get thee gone, I say.
+
+PETRUCHIO:
+How fa[SEQ_SPLITTER]res my Kate? What, sweeting, all amort?
+
+HORTENSIO[SEQ_SPLITTER]:
+Mistress, what cheer?
+
+KATHARINA:
+Faith, as cold[SEQ_SPLITTER] as can be.
+
+PETRUCHIO:
+Pluck up thy spirits; look[SEQ_SPLITTER] cheerfully upon me.
+Here love; thou see'st how di[SEQ_SPLITTER]ligent I am
+To dress thy meat myself and bring it [SEQ_SPLITTER]thee:
+I am sure, sweet Kate, this kindness merits [SEQ_SPLITTER]thanks.
+What, not a word? Nay, then thou lovest it[SEQ_SPLITTER] not;
+And all my pains is sorted to no proof.
+Here[SEQ_SPLITTER], take away this dish.
+
+KATHARINA:
+I pray you, let[SEQ_SPLITTER] it stand.
+
+PETRUCHIO:
+The poorest service is repa[SEQ_SPLITTER]id with thanks;
+And so shall mine, before you touc[SEQ_SPLITTER]h the meat.
+
+KATHARINA:
+I thank you, sir.
+
+HORTENS[SEQ_SPLITTER]IO:
+Signior Petruchio, fie! you are to blame.
+Come[SEQ_SPLITTER], mistress Kate, I'll bear you company.
+
+PETRUCHIO[SEQ_SPLITTER]:
+
+Haberdasher:
+Here is the cap your worship did b[SEQ_SPLITTER]espeak.
+
+PETRUCHIO:
+Why, this was moulded on a por[SEQ_SPLITTER]ringer;
+A velvet dish: fie, fie! 'tis lewd and fil[SEQ_SPLITTER]thy:
+Why, 'tis a cockle or a walnut-shell,
+A knack[SEQ_SPLITTER], a toy, a trick, a baby's cap:
+Away with it! come[SEQ_SPLITTER], let me have a bigger.
+
+KATHARINA:
+I'll have no b[SEQ_SPLITTER]igger: this doth fit the time,
+And gentlewomen wea[SEQ_SPLITTER]r such caps as these
+
+PETRUCHIO:
+When you are gent[SEQ_SPLITTER]le, you shall have one too,
+And not till then.
+
+HO[SEQ_SPLITTER]RTENSIO:
+
+KATHARINA:
+Why, sir, I trust I may have [SEQ_SPLITTER]leave to speak;
+And speak I will; I am no child, n[SEQ_SPLITTER]o babe:
+Your betters have endured me say my mind,
+[SEQ_SPLITTER]And if you cannot, best you stop your ears.
+My ton[SEQ_SPLITTER]gue will tell the anger of my heart,
+Or else my he[SEQ_SPLITTER]art concealing it will break,
+And rather than it s[SEQ_SPLITTER]hall, I will be free
+Even to the uttermost, as I p[SEQ_SPLITTER]lease, in words.
+
+PETRUCHIO:
+Why, thou say'st true[SEQ_SPLITTER]; it is a paltry cap,
+A custard-coffin, a bauble, [SEQ_SPLITTER]a silken pie:
+I love thee well, in that thou likes[SEQ_SPLITTER]t it not.
+
+KATHARINA:
+Love me or love me not, I li[SEQ_SPLITTER]ke the cap;
+And it I will have, or I will have non[SEQ_SPLITTER]e.
+
+PETRUCHIO:
+Thy gown? why, ay: come, tailor, le[SEQ_SPLITTER]t us see't.
+O mercy, God! what masquing stuff is h[SEQ_SPLITTER]ere?
+What's this? a sleeve? 'tis like a demi-canno[SEQ_SPLITTER]n:
+What, up and down, carved like an apple-tart?
+H[SEQ_SPLITTER]ere's snip and nip and cut and slish and slash,
+Li[SEQ_SPLITTER]ke to a censer in a barber's shop:
+Why, what, i' d[SEQ_SPLITTER]evil's name, tailor, call'st thou this?
+
+HORTENSIO[SEQ_SPLITTER]:
+
+Tailor:
+You bid me make it orderly and well,
+Ac[SEQ_SPLITTER]cording to the fashion and the time.
+
+PETRUCHIO:
+M[SEQ_SPLITTER]arry, and did; but if you be remember'd,
+I did not[SEQ_SPLITTER] bid you mar it to the time.
+Go, hop me over every[SEQ_SPLITTER] kennel home,
+For you shall hop without my custom,[SEQ_SPLITTER] sir:
+I'll none of it: hence! make your best of it[SEQ_SPLITTER].
+
+KATHARINA:
+I never saw a better-fashion'd gown,[SEQ_SPLITTER]
+More quaint, more pleasing, nor more commendable:[SEQ_SPLITTER]
+Belike you mean to make a puppet of me.
+
+PETRUCHI[SEQ_SPLITTER]O:
+Why, true; he means to make a puppet of thee.
+
+[SEQ_SPLITTER]Tailor:
+She says your worship means to make
+a pupp[SEQ_SPLITTER]et of her.
+
+PETRUCHIO:
+O monstrous arrogance! Thou[SEQ_SPLITTER] liest, thou thread,
+thou thimble,
+Thou yard, thre[SEQ_SPLITTER]e-quarters, half-yard, quarter, nail!
+Thou flea, t[SEQ_SPLITTER]hou nit, thou winter-cricket thou!
+Braved in mine [SEQ_SPLITTER]own house with a skein of thread?
+Away, thou rag, [SEQ_SPLITTER]thou quantity, thou remnant;
+Or I shall so be-mete[SEQ_SPLITTER] thee with thy yard
+As thou shalt think on prating[SEQ_SPLITTER] whilst thou livest!
+I tell thee, I, that thou has[SEQ_SPLITTER]t marr'd her gown.
+
+Tailor:
+Your worship is deceiv[SEQ_SPLITTER]ed; the gown is made
+Just as my master had directi[SEQ_SPLITTER]on:
+Grumio gave order how it should be done.
+
+GRUM[SEQ_SPLITTER]IO:
+I gave him no order; I gave him the stuff.
+
+Ta[SEQ_SPLITTER]ilor:
+But how did you desire it should be made?
+
+G[SEQ_SPLITTER]RUMIO:
+Marry, sir, with needle and thread.
+
+Tailor[SEQ_SPLITTER]:
+But did you not request to have it cut?
+
+GRUMIO:[SEQ_SPLITTER]
+Thou hast faced many things.
+
+Tailor:
+I have.
+
+GR[SEQ_SPLITTER]UMIO:
+Face not me: thou hast braved many men; brav[SEQ_SPLITTER]e not
+me; I will neither be faced nor braved. I sa[SEQ_SPLITTER]y unto
+thee, I bid thy master cut out the gown; bu[SEQ_SPLITTER]t I did
+not bid him cut it to pieces: ergo, thou l[SEQ_SPLITTER]iest.
+
+Tailor:
+Why, here is the note of the fashio[SEQ_SPLITTER]n to testify
+
+PETRUCHIO:
+Read it.
+
+GRUMIO:
+The not[SEQ_SPLITTER]e lies in's throat, if he say I said so.
+
+Tailor:
+[SEQ_SPLITTER]
+GRUMIO:
+Master, if ever I said loose-bodied gown,[SEQ_SPLITTER] sew me in
+the skirts of it, and beat me to death [SEQ_SPLITTER]with a bottom
+of brown thread: I said a gown.
+
+PET[SEQ_SPLITTER]RUCHIO:
+Proceed.
+
+Tailor:
+
+GRUMIO:
+I confess the c[SEQ_SPLITTER]ape.
+
+Tailor:
+
+GRUMIO:
+I confess two sleeves.
+
+Tai[SEQ_SPLITTER]lor:
+
+PETRUCHIO:
+Ay, there's the villany.
+
+GRUMIO:[SEQ_SPLITTER]
+Error i' the bill, sir; error i' the bill.
+I comm[SEQ_SPLITTER]anded the sleeves should be cut out and
+sewed up a[SEQ_SPLITTER]gain; and that I'll prove upon thee,
+though thy li[SEQ_SPLITTER]ttle finger be armed in a thimble.
+
+Tailor:
+This i[SEQ_SPLITTER]s true that I say: an I had thee
+in place where, t[SEQ_SPLITTER]hou shouldst know it.
+
+GRUMIO:
+I am for thee strai[SEQ_SPLITTER]ght: take thou the
+bill, give me thy mete-yard, an[SEQ_SPLITTER]d spare not me.
+
+HORTENSIO:
+God-a-mercy, Grumio! t[SEQ_SPLITTER]hen he shall have no odds.
+
+PETRUCHIO:
+Well, sir, [SEQ_SPLITTER]in brief, the gown is not for me.
+
+GRUMIO:
+You are[SEQ_SPLITTER] i' the right, sir: 'tis for my mistress.
+
+PETRUCH[SEQ_SPLITTER]IO:
+Go, take it up unto thy master's use.
+
+GRUMIO:[SEQ_SPLITTER]
+Villain, not for thy life: take up my mistress'
+g[SEQ_SPLITTER]own for thy master's use!
+
+PETRUCHIO:
+Why, sir, wh[SEQ_SPLITTER]at's your conceit in that?
+
+GRUMIO:
+O, sir, the co[SEQ_SPLITTER]nceit is deeper than you think for:
+Take up my mis[SEQ_SPLITTER]tress' gown to his master's use!
+O, fie, fie, fie![SEQ_SPLITTER]
+
+PETRUCHIO:
+
+HORTENSIO:
+Tailor, I'll pay thee for[SEQ_SPLITTER] thy gown tomorrow:
+Take no unkindness of his hast[SEQ_SPLITTER]y words:
+Away! I say; commend me to thy master.
+
+P[SEQ_SPLITTER]ETRUCHIO:
+Well, come, my Kate; we will unto your f[SEQ_SPLITTER]ather's
+Even in these honest mean habiliments:
+Our[SEQ_SPLITTER] purses shall be proud, our garments poor;
+For 'ti[SEQ_SPLITTER]s the mind that makes the body rich;
+And as the su[SEQ_SPLITTER]n breaks through the darkest clouds,
+So honour pee[SEQ_SPLITTER]reth in the meanest habit.
+What is the jay more pr[SEQ_SPLITTER]ecious than the lark,
+Because his fathers are more[SEQ_SPLITTER] beautiful?
+Or is the adder better than the eel,
+B[SEQ_SPLITTER]ecause his painted skin contents the eye?
+O, no, g[SEQ_SPLITTER]ood Kate; neither art thou the worse
+For this poor[SEQ_SPLITTER] furniture and mean array.
+if thou account'st it s[SEQ_SPLITTER]hame. lay it on me;
+And therefore frolic: we will [SEQ_SPLITTER]hence forthwith,
+To feast and sport us at thy fath[SEQ_SPLITTER]er's house.
+Go, call my men, and let us straight t[SEQ_SPLITTER]o him;
+And bring our horses unto Long-lane end;
+Th[SEQ_SPLITTER]ere will we mount, and thither walk on foot
+Let's [SEQ_SPLITTER]see; I think 'tis now some seven o'clock,
+And well[SEQ_SPLITTER] we may come there by dinner-time.
+
+KATHARINA:
+I d[SEQ_SPLITTER]are assure you, sir, 'tis almost two;
+And 'twill b[SEQ_SPLITTER]e supper-time ere you come there.
+
+PETRUCHIO:
+It s[SEQ_SPLITTER]hall be seven ere I go to horse:
+Look, what I spea[SEQ_SPLITTER]k, or do, or think to do,
+You are still crossing i[SEQ_SPLITTER]t. Sirs, let't alone:
+I will not go to-day; and er[SEQ_SPLITTER]e I do,
+It shall be what o'clock I say it is.
+
+HOR[SEQ_SPLITTER]TENSIO:
+
+TRANIO:
+Sir, this is the house: please it[SEQ_SPLITTER] you that I call?
+
+Pedant:
+Ay, what else? and but [SEQ_SPLITTER]I be deceived
+Signior Baptista may remember me,
+Ne[SEQ_SPLITTER]ar twenty years ago, in Genoa,
+Where we were lodge[SEQ_SPLITTER]rs at the Pegasus.
+
+TRANIO:
+'Tis well; and hold yo[SEQ_SPLITTER]ur own, in any case,
+With such austerity as 'longe[SEQ_SPLITTER]th to a father.
+
+Pedant:
+I warrant you.
+But, sir, [SEQ_SPLITTER]here comes your boy;
+'Twere good he were school'd.[SEQ_SPLITTER]
+
+TRANIO:
+Fear you not him. Sirrah Biondello,
+Now [SEQ_SPLITTER]do your duty throughly, I advise you:
+Imagine 'twe[SEQ_SPLITTER]re the right Vincentio.
+
+BIONDELLO:
+Tut, fear not [SEQ_SPLITTER]me.
+
+TRANIO:
+But hast thou done thy errand to Bapt[SEQ_SPLITTER]ista?
+
+BIONDELLO:
+I told him that your father was [SEQ_SPLITTER]at Venice,
+And that you look'd for him this day in[SEQ_SPLITTER] Padua.
+
+TRANIO:
+Thou'rt a tall fellow: hold thee [SEQ_SPLITTER]that to drink.
+Here comes Baptista: set your count[SEQ_SPLITTER]enance, sir.
+Signior Baptista, you are happily met[SEQ_SPLITTER].
+Sir, this is the gentleman I told you of:
+I pray[SEQ_SPLITTER] you stand good father to me now,
+Give me Bianca f[SEQ_SPLITTER]or my patrimony.
+
+Pedant:
+Soft son!
+Sir, by your l[SEQ_SPLITTER]eave: having come to Padua
+To gather in some debts[SEQ_SPLITTER], my son Lucentio
+Made me acquainted with a weight[SEQ_SPLITTER]y cause
+Of love between your daughter and himself:[SEQ_SPLITTER]
+And, for the good report I hear of you
+And for th[SEQ_SPLITTER]e love he beareth to your daughter
+And she to him,[SEQ_SPLITTER] to stay him not too long,
+I am content, in a good[SEQ_SPLITTER] father's care,
+To have him match'd; and if you pl[SEQ_SPLITTER]ease to like
+No worse than I, upon some agreement
+[SEQ_SPLITTER]Me shall you find ready and willing
+With one conse[SEQ_SPLITTER]nt to have her so bestow'd;
+For curious I cannot b[SEQ_SPLITTER]e with you,
+Signior Baptista, of whom I hear so we[SEQ_SPLITTER]ll.
+
+BAPTISTA:
+Sir, pardon me in what I have to sa[SEQ_SPLITTER]y:
+Your plainness and your shortness please me wel[SEQ_SPLITTER]l.
+Right true it is, your son Lucentio here
+Doth l[SEQ_SPLITTER]ove my daughter and she loveth him,
+Or both dissem[SEQ_SPLITTER]ble deeply their affections:
+And therefore, if you[SEQ_SPLITTER] say no more than this,
+That like a father you wil[SEQ_SPLITTER]l deal with him
+And pass my daughter a sufficient [SEQ_SPLITTER]dower,
+The match is made, and all is done:
+Your so[SEQ_SPLITTER]n shall have my daughter with consent.
+
+TRANIO:
+I [SEQ_SPLITTER]thank you, sir. Where then do you know best
+We be [SEQ_SPLITTER]
