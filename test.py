@@ -1,45 +1,55 @@
-import numpy as np
-from sklearn.manifold import TSNE
-from sklearn.cluster import KMeans
-import matplotlib.pyplot as plt
+import keras_nlp
 
-# Assuming you have trained an RNN model and obtained word embeddings
-# Replace this with your actual trained RNN model and data
-# For demonstration purposes, let's generate random embeddings and labels
-num_words = 1000
-embedding_dim = 100
-embeddings = np.random.rand(num_words, embedding_dim)
+preprocessor = keras_nlp.models.GPT2CausalLMPreprocessor.from_preset(
+    "gpt2_base_en",
+    sequence_length=128,
+)
+gpt2_lm = keras_nlp.models.GPT2CausalLM.from_preset(
+    "gpt2_base_en", preprocessor=preprocessor
+)
 
-# Generate random labels for each embedding
-labels = [str(i) for i in range(num_words)]
 
-# Perform t-SNE dimensionality reduction on embeddings
-tsne = TSNE(n_components=2, random_state=42)
-embeddings_tsne = tsne.fit_transform(embeddings)
+tokenizer = keras_nlp.models.GPT2Tokenizer.from_preset("gpt2_base_en")
+tokenizer("The quick brown fox jumped.")
 
-# Perform k-means clustering on the embeddings
-num_clusters = 5  # Adjust the number of clusters as needed
-kmeans = KMeans(n_clusters=num_clusters, random_state=42)
-cluster_labels = kmeans.fit_predict(embeddings_tsne)
+# Batched input.
+tokenizer(["The quick brown fox jumped.", "The fox slept."])
 
-# Define colors for each cluster
-cluster_colors = ['blue', 'green', 'red', 'purple', 'orange']  # Add more colors as needed
+# Detokenization.
+tokenizer.detokenize(tokenizer("The quick brown fox jumped."))
 
-# Plot t-SNE visualization with annotated closest examples per cluster and background colors
-plt.figure(figsize=(10, 8))
-for i in range(num_clusters):
-    cluster_points = embeddings_tsne[cluster_labels == i][:5]  # Limit to 5 examples per cluster
-    centroid = kmeans.cluster_centers_[i]
-    plt.scatter(cluster_points[:, 0], cluster_points[:, 1], marker='o', color=cluster_colors[i], label=f'Cluster {i}')
-    plt.scatter(centroid[0], centroid[1], marker='x', color='black', s=100)
-    
-    # Annotate closest embeddings with labels
-    for point in cluster_points:
-        idx = np.where((embeddings_tsne == point).all(axis=1))[0][0]
-        plt.annotate(labels[idx], (point[0], point[1]), textcoords="offset points", xytext=(0,10), ha='center')
+# Custom vocabulary.
+vocab = {"<|endoftext|>": 0, "a": 4, "Ġquick": 5, "Ġfox": 6}
+merges = ["Ġ q", "u i", "c k", "ui ck", "Ġq uick"]
+merges += ["Ġ f", "o x", "Ġf ox"]
+tokenizer = keras_nlp.models.GPT2Tokenizer(vocabulary=vocab, merges=merges)
+tokenizer("a quick fox.")
 
-plt.title('t-SNE Visualization of Word Embeddings with Clusters and Closest Examples')
-plt.xlabel('t-SNE Dimension 1')
-plt.ylabel('t-SNE Dimension 2')
-plt.legend()
-plt.show()
+
+start = time.time()
+
+output = gpt2_lm.generate("My trip to Yosemite was", max_length=200)
+print("\nGPT-2 output:")
+print(output)
+
+end = time.time()
+print(f"TOTAL TIME ELAPSED: {end - start:.2f}s")
+
+
+train_ds = train_ds.take(500)
+num_epochs = 1
+
+# Linearly decaying learning rate.
+learning_rate = keras.optimizers.schedules.PolynomialDecay(
+    5e-5,
+    decay_steps=train_ds.cardinality() * num_epochs,
+    end_learning_rate=0.0,
+)
+loss = keras.losses.SparseCategoricalCrossentropy(from_logits=True)
+gpt2_lm.compile(
+    optimizer=keras.optimizers.Adam(learning_rate),
+    loss=loss,
+    weighted_metrics=["accuracy"],
+)
+
+gpt2_lm.fit(train_ds, epochs=num_epochs)

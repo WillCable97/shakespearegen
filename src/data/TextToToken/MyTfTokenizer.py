@@ -24,5 +24,5 @@ class MyTfToken(TextToToken):
     
     def detokenise(self, input: list) -> list:
         ret_list = [f"{self.tf_tokenizer.index_word[token]} " for sequence in input for token in sequence]
-        return ret_list
+        return ' '.join(ret_list)
 

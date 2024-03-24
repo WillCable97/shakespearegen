@@ -20,20 +20,20 @@ from src.models.TextGenerators.RecurrentNetworkGenerator import RecurrentNetwork
 #Project details
 project_directory = os.path.abspath("./")
 path_to_data_folder = os.path.join(project_directory, "data/processed/webdata")
-#content_token = CustomCharacterToken(use_bookmark=False)
-#val_token = CustomCharacterToken(use_bookmark=False)
-content_token = MyTfToken(use_bookmark=False)
-val_token = MyTfToken(use_bookmark=False)
+content_token = CustomCharacterToken(use_bookmark=False)
+val_token = CustomCharacterToken(use_bookmark=False)
+#content_token = MyTfToken(use_bookmark=False)
+#val_token = MyTfToken(use_bookmark=False)
 
 
 
 model_name = "BIDIRTEST"
 
-sequence_length = 30
+sequence_length = 100
 batch_size = 64
 buffer_size = 10000
-embedding_dimension = 256
-dense_dimension = 512
+embedding_dimension = 64
+dense_dimension = 8
 kernel_regularizer = 0#0.01
 dropout = 0.2
 epoch_count = 30
@@ -44,7 +44,7 @@ text_path = os.path.join(project_directory, "data/processed/linetext.txt")
 
 my_data_set = E2EStandardTextObject(text_sequencer=content_token, data_loader=read_text_with_sequences
                                     , sequence_lenth=sequence_length, validation_prop=0.2
-                                    , file_path=text_path, sequence_len=sequence_length, len_type = "word")
+                                    , file_path=text_path, sequence_len=sequence_length)#, len_type = "word")
 
 #my_data_set = E2EStandardTextObject(text_sequencer=content_token, data_loader=get_data_from_hgset
 #                                    , sequence_lenth=sequence_length, validation_prop=0.05

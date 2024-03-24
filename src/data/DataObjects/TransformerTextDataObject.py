@@ -7,16 +7,16 @@ from src.data.TextToToken.TextToToken import TextToToken
 class TransformerTextDataObject:
     def __init__(self, context_sequencer: TextToToken, content_sequencer: TextToToken
                  , context_len: int, content_len: int, data_loader: typing.Callable[[typing.Any], list]
-                 , validation_prop = 0,**kwargs):
-        #Raw data and sequencing
-        self.validation_prop = validation_prop
+                 , init_tokens = True, **kwargs):
+        #Raw data and sequencing 
         self.context_sequencer = context_sequencer
         self.content_sequencer = content_sequencer
         self.context_len = context_len
         self.content_len = content_len + 1 #One will be lost when the map is applied to create labels
         self.raw_context, self.raw_content = data_loader(**kwargs)
-        self.context_sequencer.init_with_input(self.raw_context)
-        self.content_sequencer.init_with_input(self.raw_content)
+        if init_tokens:
+            self.context_sequencer.init_with_input(self.raw_context)
+            self.content_sequencer.init_with_input(self.raw_content)
         self.token_context = self.context_sequencer.tokenise(self.raw_context)
         self.token_content = self.content_sequencer.tokenise(self.raw_content)
 

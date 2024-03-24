@@ -9,6 +9,7 @@ from src.data.DataLoaders import get_data_from_hgset, identity_loader, read_text
 
 from src.models.RecurrentModels.RNN_model import RNN_model
 from src.models.RecurrentModels.LSTM_model import LSTM_model
+from src.models.RecurrentModels.LSTM_model_Birdir import LSTM_model_Birdir
 #from src.models.RecurrentModels.RNN_model import RNN_model
 
 from keras.losses import SparseCategoricalCrossentropy
@@ -26,15 +27,15 @@ val_token = MyTfToken(use_bookmark=False)
 
 
 
-model_name = "LSTM_Word_Emb"
+model_name = "RNN100Seq256Emb256Dense"
 
 sequence_length = 30
 batch_size = 64
 buffer_size = 10000
 embedding_dimension = 256
-dense_dimension = 1024
+dense_dimension = 128
 kernel_regularizer = 0#0.01
-dropout = 0#0.2
+dropout = 0.2
 epoch_count = 30
 validation_prop=0.05
 
@@ -50,10 +51,6 @@ my_data_set = E2EStandardTextObject(text_sequencer=content_token, data_loader=re
 #                                    , set_name="tiny_shakespeare", sequence_len=sequence_length)
 
 raw_val_set = my_data_set.val_raw_set
-#print(len(my_data_set.token_list))
-
-
-#print(raw_val_set[0])
 
 val_data_set = E2EStandardTextObject(text_sequencer=val_token, data_loader=identity_loader
                                      , sequence_lenth=sequence_length, input = raw_val_set) #IF I PUT THIS FIRST THE VOCAB SIZE IS WRONG. WHY??????
@@ -67,11 +64,11 @@ vocab_size_shake = my_data_set.text_sequencer.get_vocab_size()
 print(f"Vocab: {vocab_size_shake}")
 
 
-lstm_inst = LSTM_model(vocab_size=vocab_size_shake + 1, embedding_dim=embedding_dimension
+lstm_inst = LSTM_model_Birdir(vocab_size=vocab_size_shake + 1, embedding_dim=embedding_dimension
                        , rnn_units=dense_dimension, batch_size=batch_size
                        , regularizer=kernel_regularizer,dropout_rate=dropout)
 
-lstm_gen_inst = LSTM_model(vocab_size=vocab_size_shake + 1, embedding_dim=embedding_dimension
+lstm_gen_inst = LSTM_model_Birdir(vocab_size=vocab_size_shake + 1, embedding_dim=embedding_dimension
                        , rnn_units=dense_dimension, batch_size=1
                        , regularizer=kernel_regularizer,dropout_rate=dropout) #This is because models need to be loaded into a model of batch size 1 tp produce output
 

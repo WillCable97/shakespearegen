@@ -31,5 +31,5 @@ def plot_errors(model_list: list, names_list: list, col_names: list=[]):
 #plot_errors(["RNN100Seq256Emb512Dense", "LSTM100Seq256Emb512Dense"]
 #            , ["RNN", "LSTM"])
 
-plot_errors(["RNN100Seq256Emb256Dense"]
+plot_errors(["W_P_T_L1.0"]
             , ["1"])
