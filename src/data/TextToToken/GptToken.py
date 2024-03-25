@@ -9,8 +9,11 @@ class GptToken(TextToToken):
 
         #Tokeniser
         self.gpt_token = GPT2Tokenizer.from_pretrained("gpt2")
-        self.gpt_token.add_special_tokens({'pad_token': '[PAD]'})
+        print(len(self.gpt_token.get_vocab()))
+        self.gpt_token.pad_token_id= 0
+        #self.gpt_token.add_special_tokens({'pad_token': '[PAD]'})
         self.eos_token_id = self.gpt_token.eos_token_id
+        print(len(self.gpt_token.get_vocab()))
         self.vocab_size = len(self.gpt_token.get_vocab())
 
     def init_with_input(self, input: list):

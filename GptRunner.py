@@ -78,8 +78,14 @@ validation_dataset = validation_data_object.batch_and_shuffle(batch_size=batch_s
 
 
 
+#from transformers import GPT2Config
+#config = GPT2Config(vocab_size=50258)
+
+
 #from transformers import TFTrainer, TFTrainingArguments
 from transformers import TFGPT2LMHeadModel
+
+
 
 # Define the GPT model
 model = TFGPT2LMHeadModel.from_pretrained("gpt2")
@@ -91,12 +97,14 @@ eos_token_id = base_data_object.context_sequencer.eos_token_id
 
 # Set the model's pad_token_id attribute
 model.config.pad_token_id = eos_token_id
+#model.config.vocab_size = 50259
 
 
 
 import tensorflow as tf
 optimizer = tf.keras.optimizers.Adam(learning_rate=5e-5)
-model.compile(optimizer=optimizer, loss=model.compute_loss)
+loss = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)
+model.compile(optimizer=optimizer, loss=loss)
 
 
 model.fit(training_dataset, epochs=3)
