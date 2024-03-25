@@ -1,78 +1,172 @@
-import os 
-import tensorflow as tf
-
-from src.data.TextToToken.WordpieceToken import WordpieceToken
+from src.data.DataLoadersDir.EnhancedText import complete_transformer_retriever
+from src.data.TextToToken.GptToken import GptToken
 from src.data.DataObjects.TransformerTextDataObject import TransformerTextDataObject
-from src.data.DataLoaders import get_webscrape_data, get_webscrape_data_withends
-
+"""
 from src.models.Transformer.Transformer import Transformer
-
 from src.models.LossAndMetrics import masked_loss, masked_accuracy, CustomSchedule
 from src.models.Callbacks.callbacks import csv_callback, checkpoint_callback, OutputTextCallback
 from src.models.TextGenerators.StandardTransformerGenerator import StandardTransformerGenerator
 
+import os
+import tensorflow as tf
+"""
 
-#Project details
-project_directory = os.path.abspath("./")
-path_to_data_folder = os.path.join(project_directory, "data/processed/webdata")
+import os
 
-model_name = "Worpiece_Trans_V3"
 
-sequence_length = 30
+#Meta Info
+model_name = "W_P_T_S2.0"
+
+#Data hyperparameters
+data_soure = "Webscrape"
+data_sequencing_len = 1
+
+#Pre processing hyperparameters
+token_seqence_length = 75
 batch_size = 64
 buffer_size = 10000
-embedding_dimension = 128
-dense_dimension = 512
-num_heads = 8
-num_att_layers = 4
+
+#Model hyperparameters
+embedding_dimension = 64
+dense_dimension = 64
+num_heads = 1
+num_att_layers = 1
 dropout_rate = 0.1
-epoch_count = 20
+epoch_count = 40
 
-context_token = WordpieceToken(vocab_size=5000, sequence_len=sequence_length)
-content_token = WordpieceToken(vocab_size=5000, sequence_len=sequence_length)
+#File path values
+root_dir = os.path.abspath("./")
+processed_data = os.path.join(root_dir, "data", "processed")
 
-#all_eng_text, all_og_text = get_webscrape_data(data_path=path_to_data_folder)
-#context_token.init_with_input(all_eng_text)
+#************************DATA************************
 
-my_data_set = TransformerTextDataObject(context_sequencer=context_token, content_sequencer=content_token
-                                        , context_len=sequence_length, content_len=sequence_length
-                                        ,data_loader=get_webscrape_data_withends, data_path=path_to_data_folder)
+#Tokens (Text to sequence)
+context_token = GptToken()
+content_token = GptToken()
 
-vocab_size_shake = my_data_set.content_vocab
-vocab_size_eng = my_data_set.context_vocab
+#Data objects
+base_data_object = TransformerTextDataObject(context_sequencer=context_token, content_sequencer=content_token
+                                                 , context_len=token_seqence_length, content_len=token_seqence_length
+                                                 , data_loader = complete_transformer_retriever
+                                                 , base_path=processed_data, data_source=data_soure, data_sequencing_len=data_sequencing_len
+                                                 , set_suffix="base")
+
+
+
+validation_data_object = TransformerTextDataObject(context_sequencer=base_data_object.context_sequencer, content_sequencer=base_data_object.content_sequencer
+                                                 , context_len=token_seqence_length, content_len=token_seqence_length
+                                                 , data_loader = complete_transformer_retriever, init_tokens=False
+                                                 , base_path=processed_data, data_source=data_soure, data_sequencing_len=data_sequencing_len
+                                                 , set_suffix="val")
+
+
+training_data_object = TransformerTextDataObject(context_sequencer=base_data_object.context_sequencer, content_sequencer=base_data_object.content_sequencer
+                                                 , context_len=token_seqence_length, content_len=token_seqence_length
+                                                 , data_loader = complete_transformer_retriever, init_tokens=False
+                                                 , base_path=processed_data, data_source=data_soure, data_sequencing_len=data_sequencing_len)
+
+
+#Vocab printing
+vocab_size_shake = base_data_object.content_vocab
+vocab_size_eng = base_data_object.context_vocab
 print(f"Shakespeare Vocab: {vocab_size_shake} , English Vocab: {vocab_size_eng}")
 
 
-training_dataset = my_data_set.batch_and_shuffle(batch_size=batch_size,buffer_size=buffer_size)
+training_dataset = training_data_object.batch_and_shuffle(batch_size=batch_size,buffer_size=buffer_size)
+validation_dataset = validation_data_object.batch_and_shuffle(batch_size=batch_size,buffer_size=buffer_size)
 
+
+
+
+#from transformers import TFTrainer, TFTrainingArguments
+from transformers import TFGPT2LMHeadModel
+
+# Define the GPT model
+model = TFGPT2LMHeadModel.from_pretrained("gpt2")
+
+
+
+# Get the ID of the end-of-sequence token
+eos_token_id = base_data_object.context_sequencer.eos_token_id
+
+# Set the model's pad_token_id attribute
+model.config.pad_token_id = eos_token_id
+
+
+
+import tensorflow as tf
+optimizer = tf.keras.optimizers.Adam(learning_rate=5e-5)
+model.compile(optimizer=optimizer, loss=model.compute_loss)
+
+
+model.fit(training_dataset, epochs=3)
+
+
+
+"""
+from transformers import TFTrainer, TFTrainingArguments
+training_args = TFTrainingArguments(
+    output_dir="./output",
+    overwrite_output_dir=True,
+    num_train_epochs=3,
+    per_device_train_batch_size=4,
+    save_steps=10_000,
+    save_total_limit=2,
+)
+
+trainer = TFTrainer(
+    model=model,
+    args=training_args,
+    train_dataset=training_dataset,
+)
+"""
+
+
+
+
+
+
+
+
+
+
+"""
+
+#************************MODEL COMPILATION************************
+
+#Model definition
 trans_inst = Transformer(vocab_size=vocab_size_shake, context_vocab_size=vocab_size_eng
-                         ,embedding_dimension=embedding_dimension, context_length=sequence_length
-                         ,content_length=sequence_length, num_heads=num_heads
-                         , dense_dimension=dense_dimension, num_att_layers=num_att_layers)
+                         , embedding_dimension=embedding_dimension,  dense_dimension=dense_dimension
+                         , context_length=token_seqence_length,content_length=token_seqence_length
+                         , num_att_layers=num_att_layers, num_heads=num_heads)
 
 
 learning_rate = CustomSchedule(embedding_dimension)
 optimizer = tf.keras.optimizers.Adam(learning_rate, beta_1=0.9, beta_2=0.98,
                                      epsilon=1e-9)
 
-trans_inst.compile(optimizer, loss=[masked_loss],metrics=["accuracy", masked_accuracy])
-my_csv_callback = csv_callback(project_directory, model_name)
-my_checkpoint_callback = checkpoint_callback(project_directory, model_name,5)
-
-a, b = get_webscrape_data(data_path=path_to_data_folder)
-
-tester= StandardTransformerGenerator(input_str="hello this is my brother, he is a good person", source_model=trans_inst, output_len=sequence_length
-                                     ,context_sequencer=my_data_set.context_sequencer, content_sequencer=my_data_set.content_sequencer)
-output_callback = OutputTextCallback(tester, project_directory, model_name)
+trans_inst.compile(optimizer, loss=[masked_loss],metrics=[masked_accuracy])
 
 
-tester2= StandardTransformerGenerator(input_str="this morning the bird went to her nest and laid an egg", source_model=trans_inst, output_len=sequence_length
-                                     ,context_sequencer=my_data_set.context_sequencer, content_sequencer=my_data_set.content_sequencer)
-output_callback2 = OutputTextCallback(tester2, project_directory, model_name)
 
+#************************MODEL CALLBACKS************************
 
-tester3= StandardTransformerGenerator(input_str="Last year I went on holiday to another country for one week. It was very relaxing and I would like to go back", source_model=trans_inst, output_len=sequence_length
-                                     ,context_sequencer=my_data_set.context_sequencer, content_sequencer=my_data_set.content_sequencer)
-output_callback3 = OutputTextCallback(tester3, project_directory, model_name)
+my_csv_callback = csv_callback(root_dir, model_name)
+my_checkpoint_callback = checkpoint_callback(root_dir, model_name,5)
 
-trans_inst.fit(training_dataset, epochs=epoch_count, callbacks=[my_csv_callback, my_checkpoint_callback, output_callback3, output_callback2, output_callback])
+tester= StandardTransformerGenerator(input_str="hello this is my brother, he is a good person", source_model=trans_inst, output_len=token_seqence_length
+                                     ,context_sequencer=training_data_object.context_sequencer, content_sequencer=training_data_object.content_sequencer)
+output_callback = OutputTextCallback(tester, root_dir, model_name)
+
+tester2= StandardTransformerGenerator(input_str="this morning the bird flew to her nest and laid an egg", source_model=trans_inst, output_len=token_seqence_length
+                                     ,context_sequencer=training_data_object.context_sequencer, content_sequencer=training_data_object.content_sequencer)
+output_callback2 = OutputTextCallback(tester2, root_dir, model_name)
+
+tester3= StandardTransformerGenerator(input_str="last year i went on holidays to another country, it was very relaxing and I would like to go back", source_model=trans_inst, output_len=token_seqence_length
+                                     ,context_sequencer=training_data_object.context_sequencer, content_sequencer=training_data_object.content_sequencer)
+output_callback3 = OutputTextCallback(tester3, root_dir, model_name)
+
+trans_inst.fit(training_dataset, epochs=epoch_count, validation_data=validation_dataset
+               , callbacks=[my_csv_callback, my_checkpoint_callback, output_callback, output_callback2, output_callback3])
+
+"""

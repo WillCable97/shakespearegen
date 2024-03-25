@@ -19,5 +19,7 @@ def complete_transformer_retriever(base_path: str, data_source: str, data_sequen
     content_path = os.path.join(base_path, data_source, f"Seq{data_sequencing_len}", f"content_{set_suffix}.txt")
     return read_in_text_files(context_path, content_path)
 
-
+def complete_single_emb_retriever(base_path: str, data_source: str, data_sequencing_len:int, set_suffix = "train"):
+    text_path = os.path.join(base_path, data_source, f"Seq{data_sequencing_len}", f"{set_suffix}.txt")
+    return read_in_text_files(text_path)[0][:-1]
 

@@ -40,8 +40,8 @@ def plot_errors(model_list: list, col_names: list, names_list: list):
 
 
 
-models = ["W_P_T_S1.0", "W_P_T_S1.1", "W_P_T_S1.2"]
-column_names = ["loss"]#, "val_loss"]
+models = ["W_P_T_S1.0", "W_P_T_S1.1", "W_P_T_S1.2", "W_P_T_S2.0", "W_P_T_M1.0"]#["W_P_T_S2.0", "W_P_T_M1.0"]
+column_names = ["val_loss"]#, "val_loss"]
 names = models#"Training"#["Training", "Validation"]
 
 plot_errors(models,column_names,names)

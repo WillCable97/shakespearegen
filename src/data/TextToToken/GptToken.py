@@ -1,5 +1,5 @@
 from src.data.TextToToken.TextToToken import TextToToken
-import keras_nlp
+from transformers import GPT2Tokenizer
 
 class GptToken(TextToToken):
     def __init__(self):
@@ -8,15 +8,20 @@ class GptToken(TextToToken):
         self.bookmark_tokens =[0,0]
 
         #Tokeniser
-        self.gpt_token = keras_nlp.models.GPT2Tokenizer.from_preset("gpt2_base_en")
-        self.vocab_size = self.gpt_token#NEED TO DO THIS BUT WILL LOOK UP
-
+        self.gpt_token = GPT2Tokenizer.from_pretrained("gpt2")
+        self.gpt_token.add_special_tokens({'pad_token': '[PAD]'})
+        self.eos_token_id = self.gpt_token.eos_token_id
+        self.vocab_size = len(self.gpt_token.get_vocab())
 
     def init_with_input(self, input: list):
         pass
 
     def tokenise(self, input: list):
-        return self.gpt_token(input)
+        tok_output = self.gpt_token(input, padding="max_length", truncation=True, max_length=256)
+        return list(tok_output.data.values())[0] #Dont need to return the mask
     
     def detokenise(self, input: list) -> list:
-        return self.gpt_token.detokenize(input)
+        ret_list = [self.gpt_token.decode(x) for x in input]
+        return ret_list#self.gpt_token.detokenize(input)
+    
+
