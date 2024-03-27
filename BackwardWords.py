@@ -4,7 +4,7 @@ from src.data.TextToToken.CustomCharacterToken import CustomCharacterToken
 from src.data.DataLoaders import get_lines_for_backwards_testing
 from src.data.DataObjects.TransformerTextDataObject import TransformerTextDataObject
 from src.models.Transformer.Transformer import Transformer
-from src.models.LossAndMetrics import masked_loss, CustomSchedule, masked_accuracy
+from src.models.LossAndMetrics.LossAndMetrics import masked_loss, CustomSchedule, masked_accuracy
 from src.models.Callbacks.callbacks import csv_callback, checkpoint_callback
 from src.models.TextGenerators.StandardTransformerGenerator import StandardTransformerGenerator
 from src.models.Callbacks.callbacks import OutputTextCallback

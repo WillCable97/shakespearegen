@@ -40,28 +40,6 @@ processed_data = os.path.join(root_dir, "data", "processed")
 context_token = WordpieceToken(vocab_size=8000, sequence_len=token_seqence_length)
 content_token = WordpieceToken(vocab_size=8000, sequence_len=token_seqence_length)
 
-"""eng,og= complete_transformer_retriever(base_path=processed_data, data_source=data_soure
-                                       , data_sequencing_len=data_sequencing_len, set_suffix="base")
-context_token.init_with_input(eng)
-content_token.init_with_input(og)
-
-
-token_context = context_token.tokenise(eng)
-token_content = content_token.tokenise(og)
-
-import numpy as np
-np_tens = token_context.numpy()
-zeros_per_row = np.sum(np_tens == 0, axis=1)
-average_zeros_per_row = np.mean(zeros_per_row)
-
-print(zeros_per_row)
-print(np.sum(zeros_per_row == 0))
-print(np.sum(zeros_per_row != 0))
-print(average_zeros_per_row)
-
-#66.71138059701492
-#7.243314676616915
-"""
 
 #Data objects
 base_data_object = TransformerTextDataObject(context_sequencer=context_token, content_sequencer=content_token
@@ -106,31 +84,42 @@ trans_inst = Transformer(vocab_size=vocab_size_shake, context_vocab_size=vocab_s
                          , num_att_layers=num_att_layers, num_heads=num_heads)
 
 
-learning_rate = CustomSchedule(embedding_dimension)
-optimizer = tf.keras.optimizers.Adam(learning_rate, beta_1=0.9, beta_2=0.98,
-                                     epsilon=1e-9)
-
-trans_inst.compile(optimizer, loss=[masked_loss],metrics=[masked_accuracy])
 
 
 
-#************************MODEL CALLBACKS************************
 
-my_csv_callback = csv_callback(root_dir, model_name)
-my_checkpoint_callback = checkpoint_callback(root_dir, model_name,5)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 tester= StandardTransformerGenerator(input_str="hello this is my brother, he is a good person", source_model=trans_inst, output_len=token_seqence_length
                                      ,context_sequencer=training_data_object.context_sequencer, content_sequencer=training_data_object.content_sequencer)
-output_callback = OutputTextCallback(tester, root_dir, model_name)
 
-tester2= StandardTransformerGenerator(input_str="this morning the bird flew to her nest and laid an egg", source_model=trans_inst, output_len=token_seqence_length
-                                     ,context_sequencer=training_data_object.context_sequencer, content_sequencer=training_data_object.content_sequencer)
-output_callback2 = OutputTextCallback(tester2, root_dir, model_name)
+tester.generate_output()
 
-tester3= StandardTransformerGenerator(input_str="last year i went on holidays to another country, it was very relaxing and I would like to go back", source_model=trans_inst, output_len=token_seqence_length
-                                     ,context_sequencer=training_data_object.context_sequencer, content_sequencer=training_data_object.content_sequencer)
-output_callback3 = OutputTextCallback(tester3, root_dir, model_name)
 
-trans_inst.fit(training_dataset, epochs=epoch_count, validation_data=validation_dataset
-               , callbacks=[my_csv_callback, my_checkpoint_callback, output_callback, output_callback2, output_callback3])
+trans_inst_2 = tester.source_model
 
+model_name_save = "W_P_T_M1.0"
+model_path = os.path.join(root_dir, "models", model_name_save, model_name_save)
+
+trans_inst_2.save(model_path, save_format="tf")

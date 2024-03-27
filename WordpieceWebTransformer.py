@@ -8,7 +8,7 @@ from src.data.DataLoadersDir.WebscrapeData import base_webscrape_with_ends, trai
 
 from src.models.Transformer.Transformer import Transformer
 
-from src.models.LossAndMetrics import masked_loss, masked_accuracy, CustomSchedule
+from src.models.LossAndMetrics.LossAndMetrics import masked_loss, masked_accuracy, CustomSchedule
 from src.models.Callbacks.callbacks import csv_callback, checkpoint_callback, OutputTextCallback
 from src.models.TextGenerators.StandardTransformerGenerator import StandardTransformerGenerator
 
