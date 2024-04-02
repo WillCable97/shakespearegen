@@ -1,4 +1,4 @@
-from src.data.DataLoadersDir.EnhancedText import complete_transformer_retriever
+"""from src.data.DataLoadersDir.EnhancedText import complete_transformer_retriever
 from src.data.TextToToken.WordpieceToken import WordpieceToken
 from src.data.DataObjects.TransformerTextDataObject import TransformerTextDataObject
 
@@ -11,7 +11,7 @@ import os
 import tensorflow as tf
 
 #Meta Info
-model_name = "W_P_T_S2.0"
+model_name = "TEST"
 
 #Data hyperparameters
 data_soure = "Webscrape"
@@ -39,29 +39,6 @@ processed_data = os.path.join(root_dir, "data", "processed")
 #Tokens (Text to sequence)
 context_token = WordpieceToken(vocab_size=8000, sequence_len=token_seqence_length)
 content_token = WordpieceToken(vocab_size=8000, sequence_len=token_seqence_length)
-
-"""eng,og= complete_transformer_retriever(base_path=processed_data, data_source=data_soure
-                                       , data_sequencing_len=data_sequencing_len, set_suffix="base")
-context_token.init_with_input(eng)
-content_token.init_with_input(og)
-
-
-token_context = context_token.tokenise(eng)
-token_content = content_token.tokenise(og)
-
-import numpy as np
-np_tens = token_context.numpy()
-zeros_per_row = np.sum(np_tens == 0, axis=1)
-average_zeros_per_row = np.mean(zeros_per_row)
-
-print(zeros_per_row)
-print(np.sum(zeros_per_row == 0))
-print(np.sum(zeros_per_row != 0))
-print(average_zeros_per_row)
-
-#66.71138059701492
-#7.243314676616915
-"""
 
 #Data objects
 base_data_object = TransformerTextDataObject(context_sequencer=context_token, content_sequencer=content_token
@@ -131,6 +108,11 @@ tester3= StandardTransformerGenerator(input_str="last year i went on holidays to
                                      ,context_sequencer=training_data_object.context_sequencer, content_sequencer=training_data_object.content_sequencer)
 output_callback3 = OutputTextCallback(tester3, root_dir, model_name)
 
-trans_inst.fit(training_dataset, epochs=epoch_count, validation_data=validation_dataset
-               , callbacks=[my_csv_callback, my_checkpoint_callback, output_callback, output_callback2, output_callback3])
 
+
+
+if __name__ == "__main__":
+    trans_inst.fit(training_dataset, epochs=epoch_count, validation_data=validation_dataset
+                , callbacks=[my_csv_callback, my_checkpoint_callback, output_callback, output_callback2, output_callback3])
+
+"""
